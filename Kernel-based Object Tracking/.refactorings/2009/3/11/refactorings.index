@@ -1,0 +1,29 @@
+1236696704913	Rename local variable 'd'
+1236696712274	Rename local variable 'e'
+1236696718799	Rename local variable 'f'
+1236698212667	Delete element
+1236698227977	Rename type 'AbstractLocator'
+1236700167835	Rename package 'gui.menu'
+1236700281865	Rename package 'menu'
+1236700470253	Extract Class...
+1236701911062	Rename method 'setAdattaScala'
+1236701922764	Rename method 'setControllaCoefficiente'
+1236701930813	Rename method 'setRaggioMinimo'
+1236701938761	Rename method 'setBandaRicerca'
+1236703743416	Delete element
+1236703793284	Move compilation unit
+1236703822259	Delete element
+1236703922608	Delete elements
+1236704012792	Rename type 'ObjectTrackerEffect'
+1236704072301	Delete element
+1236705047334	Rename type 'TrackerOptions'
+1236705057063	Rename type 'TrackerFactory'
+1236707442787	Rename local variable 'prevTarget'
+1236708433990	Delete element
+1236708443611	Delete element
+1236708511427	Rename field 'cameraImageSize'
+1236708522328	Rename field 'gWorld'
+1236767434592	Delete element
+1236767658857	Delete element
+1236767742368	Move compilation unit
+1236767757877	Delete element

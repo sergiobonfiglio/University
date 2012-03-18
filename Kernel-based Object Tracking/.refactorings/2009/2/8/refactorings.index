@@ -1,0 +1,105 @@
+1234866833323	Extract method 'createBuffImage'
+1234872270420	Extract local variable 'width'
+1234872310699	Delete element
+1234872363178	Extract local variable 'height'
+1234914838555	Convert local variable 'processor' to field
+1234920973357	Delete elements
+1234953773434	Delete elements
+1234958686228	Delete elements
+1234959934426	Delete element
+1234959948535	Delete element
+1234960460090	Rename local variable 'e'
+1234962402931	Rename method 'createRealizedProcessor'
+1234966239383	Delete element
+1234966340674	Rename local variable 'd'
+1234967467512	Rename type 'MediaTest'
+1234969768013	Extract method 'addMenuItemsToMenus'
+1234969782610	Extract method 'addMenusToMenuBar'
+1234970312500	Rename type 'Menu'
+1234970561996	Extract method 'initMenuItems'
+1234970655200	Extract method 'addListener'
+1234970672299	Rename method 'addListener'
+1234970742323	Extract method 'addMenuItemsToMenu'
+1234971003823	Delete element
+1234971011909	Move compilation units
+1234972270164	Delete element
+1234973207601	Move compilation units
+1234973397581	Move compilation unit
+1234973410402	Rename type 'VideoGrabber'
+1234973437521	Move compilation units
+1234973458787	Rename package 'menu'
+1234975512748	Delete element
+1234975527310	Move compilation unit
+1234975576477	Move compilation unit
+1234976535756	Extract method 'getDefaultSupportedFormats'
+1234978537361	Extract local variable 'comp'
+1234986061177	Inline local variable 'iw'
+1234986066610	Inline local variable 'ih'
+1234986752631	Rename local variable 'rgbCodec'
+1234986773731	Rename local variable 'converterIn'
+1234987047637	Extract method 'getConverter'
+1234987078198	Rename local variable 'inBuffer'
+1234987087748	Rename local variable 'imgFormat'
+1234987098288	Rename local variable 'converterIn'
+1235044175480	Delete element
+1235044183959	Delete elements
+1235045393558	Extract method 'byteArrayToIntArray'
+1235045565880	Extract method 'intArrayToBufferArray'
+1235045681659	Inline local variable 'vfIn'
+1235045993400	Rename method 'intArrayToBufferArray'
+1235053178218	Delete element
+1235053351290	Rename package 'videoEffects'
+1235053365304	Rename package 'videoGrabber'
+1235053372995	Rename package 'videoProcessor'
+1235059311338	Extract local variable 'distCentroNorm'
+1235062254816	Rename local variable 'target'
+1235062280681	Extract local variable 'rX'
+1235062323346	Extract local variable 'rY'
+1235065572708	Rename local variable 'targetPrecedente'
+1235066394423	Extract method 'getWi'
+1235066781964	Extract method 'getNormalizedX'
+1235066795724	Extract method 'getNormalizedY'
+1235068160131	Delete element
+1235068179180	Delete elements
+1235068191448	Rename type 'NormalizedTargetRegion'
+1235068231470	Rename type 'ObjectTracker'
+1235084905076	Extract method 'paintVideo'
+1235140320752	Extract local variable 'glass'
+1235145797191	Extract local variable 'comp'
+1235146102744	Rename local variable 'layredPane'
+1235147042901	Extract local variable 'comp'
+1235148873332	Extract local variable 'comp2'
+1235151031049	Extract local variable 'videoSize'
+1235153447205	Inline local variable 'vfIn'
+1235160405200	Delete element
+1235160412385	Move compilation unit
+1235160418191	Move compilation unit
+1235160460524	Extract local variable 'graphics'
+1235172964327	Convert local variable 'comp2' to field
+1235173089460	Encapsulate field 'mediaPanel'
+1235173113892	Encapsulate field 'glassPane'
+1235174384221	Extract method 'recordLastFrame'
+1235175194209	Delete element
+1235176184861	Rename local variable 'key'
+1235178432469	Extract local variable 'distance'
+1235216649503	Extract local variable 'minX'
+1235216658333	Extract local variable 'maxX'
+1235216673041	Extract local variable 'minY'
+1235216679740	Extract local variable 'maxY'
+1235217120900	Extract local variable 'p'
+1235217235018	Extract method 'getMinImgX'
+1235217245979	Extract method 'getMaxImgX'
+1235217261863	Extract method 'getMinImgY'
+1235217273392	Extract method 'getMaxImgY'
+1235218398755	Extract local variable 'nX'
+1235218468935	Extract local variable 'nY'
+1235229435456	Move compilation unit
+1235308396346	Extract local variable 'tmp'
+1235308404530	Rename local variable 'tmp'
+1235316067956	Rename local variable 'distance'
+1235316302869	Rename field 'mediaIterazioni'
+1235324574914	Rename local variable 'prevTarget'
+1235327178525	Extract local variable 'glassPane'
+1235332823298	Rename local variable 'modelloSuccessivo'
+1235337873613	Rename local variable 'hNewX'
+1235337880695	Rename local variable 'hNewY'

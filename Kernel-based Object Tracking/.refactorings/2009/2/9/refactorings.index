@@ -1,0 +1,94 @@
+1235409962187	Extract local variable 'p'
+1235409979361	Rename local variable 'p'
+1235411453518	Extract method 'checkBhattCoeff'
+1235411583034	Rename method 'addFrame'
+1235411886591	Rename method 'locateModel'
+1235412311014	Rename local variable 'hNewX'
+1235412317033	Rename local variable 'hNewY'
+1235412540213	Extract constant 'BANDWIDTH_RICERCA'
+1235413279974	Rename local variable 'modelloSuccessivoMinus'
+1235413293500	Rename local variable 'modelloSuccessivoOriginal'
+1235413301039	Rename local variable 'modelloSuccessivoPlus'
+1235413862526	Extract constant 'GAMMA'
+1235413995977	Rename method 'adattaScala'
+1235414743100	Move compilation units
+1235429652964	Extract method 'initLayeredPane'
+1235434035479	Extract constant 'RAGGIO_MINIMO'
+1235434691646	Rename field 'play'
+1235436494667	Rename local variable 'video'
+1235479166993	Rename local variable 'list'
+1235479221343	Rename local variable 'list'
+1235479233420	Rename local variable 'b'
+1235479278669	Rename local variable 'lista'
+1235479320589	Rename local variable 'lista'
+1235479466006	Extract constant 'MS_MAX_ITERAZIONI'
+1235488249560	Rename method 'spostaCentro'
+1235488544697	Rename local variable 'modelloMinus'
+1235489133474	Rename local variable 'candidatoMinus'
+1235489821252	Rename method 'adaptScale'
+1235490703711	Rename type 'TargerCandidate'
+1235491403676	Move compilation units
+1235491410976	Move compilation unit
+1235491500967	Rename field 'rX'
+1235491509857	Rename field 'rY'
+1235578021632	Rename field 'frame'
+1235579718278	Extract local variable 'invBMap'
+1235579768785	Rename method 'getInvBMap'
+1235585588568	Rename type 'VideoImporter'
+1235585622657	Move compilation units
+1235585630391	Delete element
+1235585650492	Rename package 'video.IO'
+1235585844099	Rename local variable 'player'
+1235587076972	Rename field 'player'
+1235587090629	Rename method 'getPlayer'
+1235587135292	Rename local variable 'player'
+1235587179834	Rename local variable 'player'
+1235592147000	Delete element
+1235596938763	Move compilation unit
+1235598532124	Rename local variable 'pu'
+1235605437061	Rename method 'getRx'
+1235605467136	Rename method 'setRx'
+1235605475334	Rename method 'setRy'
+1235605510102	Rename field 'rx'
+1235605519071	Rename field 'ry'
+1235605540920	Rename field 'frame'
+1235736879873	Rename package 'tracker.target'
+1235743699573	Extract local variable 'region2'
+1235743709270	Rename local variable 'region2'
+1235744837843	Rename local variable 'modelRegion'
+1235745070253	Rename method 'calcInvBMap'
+1235749931109	Rename method 'k'
+1235750264253	Rename local variable 'y1'
+1235750272885	Rename local variable 'y0'
+1235750301665	Extract local variable 'y1'
+1235750454475	Rename field 'esecuzioniAddFrame'
+1235751470074	Rename field 'tempoTrue'
+1235751482492	Rename field 'numEsecuzioni'
+1235754049612	Delete elements
+1235754477530	Rename method 'locateScaledModel'
+1235754485807	Rename method 'locateScaledModel'
+1235755435212	Rename method 'adaptRegion'
+1235755441083	Rename method 'adjust'
+1235755811528	Rename local variable 'regionSame'
+1235755960402	Rename method 'getRegionCoefficientOfCandidate'
+1235756125631	Inline local variable 'raggioX'
+1235756129209	Inline local variable 'raggioY'
+1235757221606	Rename type 'Tracker'
+1235757662086	Rename type 'Locator'
+1235761460697	Delete element
+1235764348691	Copy compilation unit
+1235764361431	Delete element
+1235764393786	Rename type 'TargetModelPerformanceTest'
+1235764449787	Rename type 'PerformanceTest'
+1235764471260	Copy compilation units
+1235764477042	Delete elements
+1235765001454	Delete element
+1235775011644	Rename local variable 'bCSame'
+1235775103390	Delete element
+1235777053583	Extract local variable 'nuovoCentro'
+1235841928485	Extract local variable 'controlsHeight'
+1235845159335	Rename package 'video.io'
+1235846662803	Delete element
+1235847450059	Rename method 'setLiveCam'
+1235847842243	Convert local variable 'layeredPane' to field
+1235849594773	Delete element

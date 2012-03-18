@@ -1,0 +1,1309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_bsyiwJr2Ed2wxcOs-TQPsQ">
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_bsyiwZr2Ed2wxcOs-TQPsQ" name="boolean"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_bsyiwpr2Ed2wxcOs-TQPsQ" name="byte"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_bsyiw5r2Ed2wxcOs-TQPsQ" name="char"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_bsyixJr2Ed2wxcOs-TQPsQ" name="double"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_bsyixZr2Ed2wxcOs-TQPsQ" name="float"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_bsyixpr2Ed2wxcOs-TQPsQ" name="int"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_bsyix5r2Ed2wxcOs-TQPsQ" name="long"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_bsyiyJr2Ed2wxcOs-TQPsQ" name="short"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_bsyiyZr2Ed2wxcOs-TQPsQ" name="Main">
+    <ownedOperation xmi:id="_bsyiypr2Ed2wxcOs-TQPsQ" name="main" visibility="public" isStatic="true">
+      <ownedParameter xmi:id="_bsyiy5r2Ed2wxcOs-TQPsQ" name="args" type="_bs0_OZr2Ed2wxcOs-TQPsQ"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_bsyizJr2Ed2wxcOs-TQPsQ" name="eccezioni">
+    <packagedElement xmi:type="uml:Class" xmi:id="_bsyizZr2Ed2wxcOs-TQPsQ" name="MessageNotFoundException">
+      <generalization xmi:id="_bsyizpr2Ed2wxcOs-TQPsQ" general="_bsyi1Zr2Ed2wxcOs-TQPsQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_bsyiz5r2Ed2wxcOs-TQPsQ" name="FileTooBigException">
+      <generalization xmi:id="_bsyi0Jr2Ed2wxcOs-TQPsQ" general="_bsyi1Zr2Ed2wxcOs-TQPsQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_bsyi0Zr2Ed2wxcOs-TQPsQ" name="FileNotFoundException">
+      <generalization xmi:id="_bsyi0pr2Ed2wxcOs-TQPsQ" general="_bsyi1Zr2Ed2wxcOs-TQPsQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_bsyi05r2Ed2wxcOs-TQPsQ" name="MessageTooBigException">
+      <generalization xmi:id="_bsyi1Jr2Ed2wxcOs-TQPsQ" general="_bsyi1Zr2Ed2wxcOs-TQPsQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_bsyi1Zr2Ed2wxcOs-TQPsQ" name="Exception"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_bsyi1pr2Ed2wxcOs-TQPsQ" name="gui">
+    <packagedElement xmi:type="uml:Class" xmi:id="_bsyi15r2Ed2wxcOs-TQPsQ" name="EmbedFrame">
+      <generalization xmi:id="_bsyi2Jr2Ed2wxcOs-TQPsQ" general="_bszKS5r2Ed2wxcOs-TQPsQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_bsyi2Zr2Ed2wxcOs-TQPsQ" name="ViewPanel">
+      <generalization xmi:id="_bsyi2pr2Ed2wxcOs-TQPsQ" general="_bszKTJr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyi25r2Ed2wxcOs-TQPsQ" name="img" visibility="private" type="_bszKTZr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyi3Jr2Ed2wxcOs-TQPsQ" name="zoom" visibility="private" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyi3Zr2Ed2wxcOs-TQPsQ" name="rh" visibility="private" type="_bszKTpr2Ed2wxcOs-TQPsQ"/>
+      <ownedOperation xmi:id="_bsyi3pr2Ed2wxcOs-TQPsQ" name="paintComponent" visibility="public">
+        <ownedParameter xmi:id="_bsyi35r2Ed2wxcOs-TQPsQ" name="g" type="_bszKT5r2Ed2wxcOs-TQPsQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bsyi4Jr2Ed2wxcOs-TQPsQ" name="setImage" visibility="public">
+        <ownedParameter xmi:id="_bsyi4Zr2Ed2wxcOs-TQPsQ" name="img" type="_bszKTZr2Ed2wxcOs-TQPsQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bsyi4pr2Ed2wxcOs-TQPsQ" name="clear" visibility="public"/>
+      <ownedOperation xmi:id="_bsyi45r2Ed2wxcOs-TQPsQ" name="getImage" visibility="public">
+        <ownedParameter xmi:id="_bsyi5Jr2Ed2wxcOs-TQPsQ" name="return" type="_bszKTZr2Ed2wxcOs-TQPsQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bsyi5Zr2Ed2wxcOs-TQPsQ" name="setZoom" visibility="public">
+        <ownedParameter xmi:id="_bsyi5pr2Ed2wxcOs-TQPsQ" name="zoom" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bsyi55r2Ed2wxcOs-TQPsQ" name="_rh" type="_bszKTpr2Ed2wxcOs-TQPsQ"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_bsyi6Jr2Ed2wxcOs-TQPsQ" name="UnembedFrame">
+      <generalization xmi:id="_bsyi6Zr2Ed2wxcOs-TQPsQ" general="_bszKUJr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyi6pr2Ed2wxcOs-TQPsQ" name="jButton1" visibility="private" type="_bszKUZr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyi65r2Ed2wxcOs-TQPsQ" name="jButton2" visibility="private" type="_bszKUZr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyi7Jr2Ed2wxcOs-TQPsQ" name="jComboBox2" visibility="private" type="_bszKUpr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyi7Zr2Ed2wxcOs-TQPsQ" name="jComboBoxECC" visibility="private" type="_bszKUpr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyi7pr2Ed2wxcOs-TQPsQ" name="jComboBoxModulazione" visibility="private" type="_bszKUpr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyi75r2Ed2wxcOs-TQPsQ" name="jLabel1" visibility="private" type="_bszKU5r2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyi8Jr2Ed2wxcOs-TQPsQ" name="jLabel2" visibility="private" type="_bszKU5r2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyi8Zr2Ed2wxcOs-TQPsQ" name="jLabel3" visibility="private" type="_bszKU5r2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyi8pr2Ed2wxcOs-TQPsQ" name="jLabel4" visibility="private" type="_bszKU5r2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyi85r2Ed2wxcOs-TQPsQ" name="jLabel5" visibility="private" type="_bszKU5r2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyi9Jr2Ed2wxcOs-TQPsQ" name="jLabel6" visibility="private" type="_bszKU5r2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyi9Zr2Ed2wxcOs-TQPsQ" name="jPasswordField1" visibility="private" type="_bszKVJr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyi9pr2Ed2wxcOs-TQPsQ" name="jTextField3" visibility="private" type="_bszKVZr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyi95r2Ed2wxcOs-TQPsQ" name="jTextFieldIterazioni" visibility="private" type="_bszKVZr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyi-Jr2Ed2wxcOs-TQPsQ" name="jTextFieldM" visibility="private" type="_bszKVZr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyi-Zr2Ed2wxcOs-TQPsQ" name="jTextFieldN" visibility="private" type="_bszKVZr2Ed2wxcOs-TQPsQ"/>
+      <ownedOperation xmi:id="_bsyi-pr2Ed2wxcOs-TQPsQ" name="initComponents" visibility="private"/>
+      <ownedOperation xmi:id="_bsyi-5r2Ed2wxcOs-TQPsQ" name="jButton1ActionPerformed" visibility="private">
+        <ownedParameter xmi:id="_bsyi_Jr2Ed2wxcOs-TQPsQ" name="evt" type="_bszKVpr2Ed2wxcOs-TQPsQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bsyi_Zr2Ed2wxcOs-TQPsQ" name="jComboBoxECCActionPerformed" visibility="private">
+        <ownedParameter xmi:id="_bsyi_pr2Ed2wxcOs-TQPsQ" name="evt" type="_bszKVpr2Ed2wxcOs-TQPsQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bsyi_5r2Ed2wxcOs-TQPsQ" name="jTextFieldNActionPerformed" visibility="private">
+        <ownedParameter xmi:id="_bsyjAJr2Ed2wxcOs-TQPsQ" name="evt" type="_bszKVpr2Ed2wxcOs-TQPsQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bsyjAZr2Ed2wxcOs-TQPsQ" name="jPasswordField1AncestorMoved" visibility="private">
+        <ownedParameter xmi:id="_bsyjApr2Ed2wxcOs-TQPsQ" name="evt" type="_bszKV5r2Ed2wxcOs-TQPsQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bsyjA5r2Ed2wxcOs-TQPsQ" name="jPasswordField1ActionPerformed" visibility="private">
+        <ownedParameter xmi:id="_bsyjBJr2Ed2wxcOs-TQPsQ" name="evt" type="_bszKVpr2Ed2wxcOs-TQPsQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bsyjBZr2Ed2wxcOs-TQPsQ" name="jTextFieldMActionPerformed" visibility="private">
+        <ownedParameter xmi:id="_bsyjBpr2Ed2wxcOs-TQPsQ" name="evt" type="_bszKVpr2Ed2wxcOs-TQPsQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bsyjB5r2Ed2wxcOs-TQPsQ" name="main" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_bsyjCJr2Ed2wxcOs-TQPsQ" name="args" type="_bs0_OZr2Ed2wxcOs-TQPsQ"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_bsyjCZr2Ed2wxcOs-TQPsQ" name="ImagePreviewPanel">
+      <generalization xmi:id="_bsyjCpr2Ed2wxcOs-TQPsQ" general="_bszKTJr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyjC5r2Ed2wxcOs-TQPsQ" name="width" visibility="private" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyjDJr2Ed2wxcOs-TQPsQ" name="height" visibility="private" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyjDZr2Ed2wxcOs-TQPsQ" name="icon" visibility="private" type="_bszKWJr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyjDpr2Ed2wxcOs-TQPsQ" name="image" visibility="private" type="_bszKTZr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyjD5r2Ed2wxcOs-TQPsQ" name="ACCSIZE" visibility="private" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyjEJr2Ed2wxcOs-TQPsQ" name="bg" visibility="private" type="_bszKWZr2Ed2wxcOs-TQPsQ"/>
+      <ownedOperation xmi:id="_bsyjEZr2Ed2wxcOs-TQPsQ" name="propertyChange" visibility="public">
+        <ownedParameter xmi:id="_bsyjEpr2Ed2wxcOs-TQPsQ" name="e" type="_bszKWpr2Ed2wxcOs-TQPsQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bsyjE5r2Ed2wxcOs-TQPsQ" name="scaleImage" visibility="private"/>
+      <ownedOperation xmi:id="_bsyjFJr2Ed2wxcOs-TQPsQ" name="paintComponent" visibility="public">
+        <ownedParameter xmi:id="_bsyjFZr2Ed2wxcOs-TQPsQ" name="g" type="_bszKT5r2Ed2wxcOs-TQPsQ"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_bsyjFpr2Ed2wxcOs-TQPsQ" name="FramePrincipale">
+      <generalization xmi:id="_bsyjF5r2Ed2wxcOs-TQPsQ" general="_bszKS5r2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyjGJr2Ed2wxcOs-TQPsQ" name="barraMenu" visibility="private" type="_bszKW5r2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyjGZr2Ed2wxcOs-TQPsQ" name="file" visibility="private" type="_bszKXJr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyjGpr2Ed2wxcOs-TQPsQ" name="apri" visibility="private" type="_bszKXZr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyjG5r2Ed2wxcOs-TQPsQ" name="salva" visibility="private" type="_bszKXZr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyjHJr2Ed2wxcOs-TQPsQ" name="ripristinaOriginale" visibility="private" type="_bszKXZr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyjHZr2Ed2wxcOs-TQPsQ" name="esci" visibility="private" type="_bszKXZr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyjHpr2Ed2wxcOs-TQPsQ" name="elementiMenuFile" visibility="private" type="_bszKXZr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyjH5r2Ed2wxcOs-TQPsQ" name="menuSSIS" visibility="private" type="_bszKXJr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyjIJr2Ed2wxcOs-TQPsQ" name="rimuoviRumore" visibility="private" type="_bszKXZr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyjIZr2Ed2wxcOs-TQPsQ" name="toGray" visibility="private" type="_bszKXZr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyjIpr2Ed2wxcOs-TQPsQ" name="mostraSpettro" visibility="private" type="_bszKXZr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyjI5r2Ed2wxcOs-TQPsQ" name="addGaussianNoise" visibility="private" type="_bszKXZr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyjJJr2Ed2wxcOs-TQPsQ" name="inserisciMsgSSIS" visibility="private" type="_bszKXZr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyjJZr2Ed2wxcOs-TQPsQ" name="trovaMsgSSIS" visibility="private" type="_bszKXZr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyjJpr2Ed2wxcOs-TQPsQ" name="menuInizialmenteDisabilitati" visibility="private" type="_bszKXZr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyjJ5r2Ed2wxcOs-TQPsQ" name="pannello1" visibility="private" type="_bsyi2Zr2Ed2wxcOs-TQPsQ" association="_bszKapr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyjKJr2Ed2wxcOs-TQPsQ" name="pannello2" visibility="private" type="_bsyi2Zr2Ed2wxcOs-TQPsQ" association="_bszKbJr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyjKZr2Ed2wxcOs-TQPsQ" name="slider" visibility="private" type="_bszKXpr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyjKpr2Ed2wxcOs-TQPsQ" name="etichettaCapienza" visibility="private" type="_bszKX5r2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyjK5r2Ed2wxcOs-TQPsQ" name="filtriApribili" visibility="private" type="_bszKYJr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyjLJr2Ed2wxcOs-TQPsQ" name="filtriSalvabili" visibility="private" type="_bszKYJr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyjLZr2Ed2wxcOs-TQPsQ" name="fileChooser" visibility="private" type="_bszKYZr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyjLpr2Ed2wxcOs-TQPsQ" name="preview" visibility="private" type="_bsyjCZr2Ed2wxcOs-TQPsQ" association="_bszKbpr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyjL5r2Ed2wxcOs-TQPsQ" name="modified" visibility="private" type="_bsyiwZr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyjMJr2Ed2wxcOs-TQPsQ" name="originale" visibility="private" type="_bszKYpr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyjMZr2Ed2wxcOs-TQPsQ" name="immagine" visibility="private" type="_bszKYpr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyjMpr2Ed2wxcOs-TQPsQ" name="immagineVisuale" visibility="private" type="_bszKYpr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bsyjM5r2Ed2wxcOs-TQPsQ" name="frame" visibility="private" type="_bsyjFpr2Ed2wxcOs-TQPsQ" association="_bszKcJr2Ed2wxcOs-TQPsQ"/>
+      <ownedOperation xmi:id="_bsyjNJr2Ed2wxcOs-TQPsQ" name="getPannello1" visibility="public">
+        <ownedParameter xmi:id="_bsyjNZr2Ed2wxcOs-TQPsQ" name="return" type="_bsyi2Zr2Ed2wxcOs-TQPsQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bsyjNpr2Ed2wxcOs-TQPsQ" name="setImmagine" visibility="public">
+        <ownedParameter xmi:id="_bsyjN5r2Ed2wxcOs-TQPsQ" name="immagine" type="_bszKYpr2Ed2wxcOs-TQPsQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bsyjOJr2Ed2wxcOs-TQPsQ" name="getImmagine" visibility="public">
+        <ownedParameter xmi:id="_bsyjOZr2Ed2wxcOs-TQPsQ" name="return" type="_bszKYpr2Ed2wxcOs-TQPsQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bsyjOpr2Ed2wxcOs-TQPsQ" name="getInstance" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_bsyjO5r2Ed2wxcOs-TQPsQ" name="return" type="_bsyjFpr2Ed2wxcOs-TQPsQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bsyjPJr2Ed2wxcOs-TQPsQ" name="stateChanged" visibility="public">
+        <ownedParameter xmi:id="_bsyjPZr2Ed2wxcOs-TQPsQ" name="e" type="_bszKY5r2Ed2wxcOs-TQPsQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bsyjPpr2Ed2wxcOs-TQPsQ" name="actionPerformed" visibility="public">
+        <ownedParameter xmi:id="_bsyjP5r2Ed2wxcOs-TQPsQ" name="e" type="_bszKZJr2Ed2wxcOs-TQPsQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bsyjQJr2Ed2wxcOs-TQPsQ" name="rimuoviRumore" visibility="private"/>
+      <ownedOperation xmi:id="_bsyjQZr2Ed2wxcOs-TQPsQ" name="toGray" visibility="private"/>
+      <ownedOperation xmi:id="_bsyjQpr2Ed2wxcOs-TQPsQ" name="addGaussianNoise" visibility="private"/>
+      <ownedOperation xmi:id="_bsyjQ5r2Ed2wxcOs-TQPsQ" name="addGaussianNoiseTest" visibility="private">
+        <ownedParameter xmi:id="_bsyjRJr2Ed2wxcOs-TQPsQ" name="deviazione" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bsyjRZr2Ed2wxcOs-TQPsQ" name="inserisciMsgSSISTest" visibility="private">
+        <ownedParameter xmi:id="_bsyjRpr2Ed2wxcOs-TQPsQ" name="psw" type="_bs0_OZr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszJ0Jr2Ed2wxcOs-TQPsQ" name="msg" type="_bs0_OZr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszJ0Zr2Ed2wxcOs-TQPsQ" name="deviazione" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszJ0pr2Ed2wxcOs-TQPsQ" name="tipoECC" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bszJ05r2Ed2wxcOs-TQPsQ" name="trovaMsgSSISTest" visibility="private">
+        <ownedParameter xmi:id="_bszJ1Jr2Ed2wxcOs-TQPsQ" name="psw" type="_bs0_OZr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszJ1Zr2Ed2wxcOs-TQPsQ" name="lunghezzaChar" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszJ1pr2Ed2wxcOs-TQPsQ" name="tipoECC" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszJ15r2Ed2wxcOs-TQPsQ" name="return" type="_bs0_OZr2Ed2wxcOs-TQPsQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bszJ2Jr2Ed2wxcOs-TQPsQ" name="main" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_bszJ2Zr2Ed2wxcOs-TQPsQ" name="args" type="_bs0_OZr2Ed2wxcOs-TQPsQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bszJ2pr2Ed2wxcOs-TQPsQ" name="apri" visibility="private"/>
+      <ownedOperation xmi:id="_bszJ25r2Ed2wxcOs-TQPsQ" name="aggiornaBarra" visibility="private"/>
+      <ownedOperation xmi:id="_bszJ3Jr2Ed2wxcOs-TQPsQ" name="salvaTest" visibility="private">
+        <ownedParameter xmi:id="_bszJ3Zr2Ed2wxcOs-TQPsQ" name="path" type="_bs0_OZr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszJ3pr2Ed2wxcOs-TQPsQ" name="compressione" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bszJ35r2Ed2wxcOs-TQPsQ" name="salva" visibility="private"/>
+      <ownedOperation xmi:id="_bszJ4Jr2Ed2wxcOs-TQPsQ" name="ripristinaOriginale" visibility="private"/>
+      <ownedOperation xmi:id="_bszJ4Zr2Ed2wxcOs-TQPsQ" name="esci" visibility="private"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_bszJ4pr2Ed2wxcOs-TQPsQ" name="EmbedPanel">
+      <generalization xmi:id="_bszJ45r2Ed2wxcOs-TQPsQ" general="_bszKZZr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bszJ5Jr2Ed2wxcOs-TQPsQ" name="frame" type="_bszKS5r2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bszJ5Zr2Ed2wxcOs-TQPsQ" name="jButton1" visibility="private" type="_bszKUZr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bszJ5pr2Ed2wxcOs-TQPsQ" name="jButton2" visibility="private" type="_bszKUZr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bszJ55r2Ed2wxcOs-TQPsQ" name="jComboBox1" visibility="private" type="_bszKUpr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bszJ6Jr2Ed2wxcOs-TQPsQ" name="jComboBoxECC" visibility="private" type="_bszKUpr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bszJ6Zr2Ed2wxcOs-TQPsQ" name="jComboBoxModulazione" visibility="private" type="_bszKUpr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bszJ6pr2Ed2wxcOs-TQPsQ" name="jLabel1" visibility="private" type="_bszKU5r2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bszJ65r2Ed2wxcOs-TQPsQ" name="jLabel2" visibility="private" type="_bszKU5r2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bszJ7Jr2Ed2wxcOs-TQPsQ" name="jLabel3" visibility="private" type="_bszKU5r2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bszJ7Zr2Ed2wxcOs-TQPsQ" name="jLabel4" visibility="private" type="_bszKU5r2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bszJ7pr2Ed2wxcOs-TQPsQ" name="jLabel5" visibility="private" type="_bszKU5r2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bszJ75r2Ed2wxcOs-TQPsQ" name="jLabel6" visibility="private" type="_bszKU5r2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bszJ8Jr2Ed2wxcOs-TQPsQ" name="jLabel7" visibility="private" type="_bszKU5r2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bszJ8Zr2Ed2wxcOs-TQPsQ" name="jLabel8" visibility="private" type="_bszKU5r2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bszJ8pr2Ed2wxcOs-TQPsQ" name="jPasswordField1" visibility="private" type="_bszKVJr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bszJ85r2Ed2wxcOs-TQPsQ" name="jScrollPane1" visibility="private" type="_bszKZpr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bszJ9Jr2Ed2wxcOs-TQPsQ" name="jSlider1" visibility="private" type="_bszKZ5r2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bszJ9Zr2Ed2wxcOs-TQPsQ" name="jTextArea1" visibility="private" type="_bszKaJr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bszJ9pr2Ed2wxcOs-TQPsQ" name="jTextFieldIterazioni" visibility="private" type="_bszKVZr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bszJ95r2Ed2wxcOs-TQPsQ" name="jTextFieldM" visibility="private" type="_bszKVZr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bszJ-Jr2Ed2wxcOs-TQPsQ" name="jTextFieldN" visibility="private" type="_bszKVZr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bszJ-Zr2Ed2wxcOs-TQPsQ" name="bindingGroup" visibility="private" type="_bszKaZr2Ed2wxcOs-TQPsQ"/>
+      <ownedOperation xmi:id="_bszJ-pr2Ed2wxcOs-TQPsQ" name="initComponents" visibility="private"/>
+      <ownedOperation xmi:id="_bszJ-5r2Ed2wxcOs-TQPsQ" name="jComboBoxECCActionPerformed" visibility="private">
+        <ownedParameter xmi:id="_bszJ_Jr2Ed2wxcOs-TQPsQ" name="evt" type="_bszKVpr2Ed2wxcOs-TQPsQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bszJ_Zr2Ed2wxcOs-TQPsQ" name="jTextFieldNActionPerformed" visibility="private">
+        <ownedParameter xmi:id="_bszJ_pr2Ed2wxcOs-TQPsQ" name="evt" type="_bszKVpr2Ed2wxcOs-TQPsQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bszJ_5r2Ed2wxcOs-TQPsQ" name="jButton2ActionPerformed" visibility="private">
+        <ownedParameter xmi:id="_bszKAJr2Ed2wxcOs-TQPsQ" name="evt" type="_bszKVpr2Ed2wxcOs-TQPsQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bszKAZr2Ed2wxcOs-TQPsQ" name="jButton1ActionPerformed" visibility="private">
+        <ownedParameter xmi:id="_bszKApr2Ed2wxcOs-TQPsQ" name="evt" type="_bszKVpr2Ed2wxcOs-TQPsQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bszKA5r2Ed2wxcOs-TQPsQ" name="jPasswordField1ActionPerformed" visibility="private">
+        <ownedParameter xmi:id="_bszKBJr2Ed2wxcOs-TQPsQ" name="evt" type="_bszKVpr2Ed2wxcOs-TQPsQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bszKBZr2Ed2wxcOs-TQPsQ" name="jTextFieldMActionPerformed" visibility="private">
+        <ownedParameter xmi:id="_bszKBpr2Ed2wxcOs-TQPsQ" name="evt" type="_bszKVpr2Ed2wxcOs-TQPsQ"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_bszKB5r2Ed2wxcOs-TQPsQ" name="Controller">
+      <ownedAttribute xmi:id="_bszKCJr2Ed2wxcOs-TQPsQ" name="instance" visibility="private" type="_bszKB5r2Ed2wxcOs-TQPsQ" association="_bszKcpr2Ed2wxcOs-TQPsQ"/>
+      <ownedOperation xmi:id="_bszKCZr2Ed2wxcOs-TQPsQ" name="getInstance" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_bszKCpr2Ed2wxcOs-TQPsQ" name="return" type="_bszKB5r2Ed2wxcOs-TQPsQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bszKC5r2Ed2wxcOs-TQPsQ" name="trovaMsgSSIS" visibility="public">
+        <ownedParameter xmi:id="_bszKDJr2Ed2wxcOs-TQPsQ" name="psw" type="_bs0_OZr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszKDZr2Ed2wxcOs-TQPsQ" name="n" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszKDpr2Ed2wxcOs-TQPsQ" name="m" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszKD5r2Ed2wxcOs-TQPsQ" name="iterazioni" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszKEJr2Ed2wxcOs-TQPsQ" name="tipoECC" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bszKEZr2Ed2wxcOs-TQPsQ" name="inserisciMsgSSIS" visibility="public">
+        <ownedParameter xmi:id="_bszKEpr2Ed2wxcOs-TQPsQ" name="psw" type="_bs0_OZr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszKE5r2Ed2wxcOs-TQPsQ" name="msg" type="_bs0_OZr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszKFJr2Ed2wxcOs-TQPsQ" name="deviazione" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszKFZr2Ed2wxcOs-TQPsQ" name="n" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszKFpr2Ed2wxcOs-TQPsQ" name="m" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszKF5r2Ed2wxcOs-TQPsQ" name="iterazioni" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszKGJr2Ed2wxcOs-TQPsQ" name="tipoECC" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_bszKGZr2Ed2wxcOs-TQPsQ" name="filters">
+      <packagedElement xmi:type="uml:Class" xmi:id="_bszKGpr2Ed2wxcOs-TQPsQ" name="GIFFilter">
+        <generalization xmi:id="_bszKG5r2Ed2wxcOs-TQPsQ" general="_bszKI5r2Ed2wxcOs-TQPsQ"/>
+        <ownedOperation xmi:id="_bszKHJr2Ed2wxcOs-TQPsQ" name="getDescription" visibility="public">
+          <ownedParameter xmi:id="_bszKHZr2Ed2wxcOs-TQPsQ" name="return" type="_bs0_OZr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bszKHpr2Ed2wxcOs-TQPsQ" name="accept" visibility="public">
+          <ownedParameter xmi:id="_bszKH5r2Ed2wxcOs-TQPsQ" name="f" type="_bszKSpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszKIJr2Ed2wxcOs-TQPsQ" name="return" type="_bsyiwZr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bszKIZr2Ed2wxcOs-TQPsQ" name="getExtension" visibility="public">
+          <ownedParameter xmi:id="_bszKIpr2Ed2wxcOs-TQPsQ" name="return" type="_bs0_OZr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_bszKI5r2Ed2wxcOs-TQPsQ" name="ExtFilter">
+        <generalization xmi:id="_bszKJJr2Ed2wxcOs-TQPsQ" general="_bszKYJr2Ed2wxcOs-TQPsQ"/>
+        <ownedOperation xmi:id="_bszKJZr2Ed2wxcOs-TQPsQ" name="getExtension" visibility="public" isAbstract="true">
+          <ownedParameter xmi:id="_bszKJpr2Ed2wxcOs-TQPsQ" name="return" type="_bs0_OZr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_bszKJ5r2Ed2wxcOs-TQPsQ" name="JPGFilter">
+        <generalization xmi:id="_bszKKJr2Ed2wxcOs-TQPsQ" general="_bszKI5r2Ed2wxcOs-TQPsQ"/>
+        <ownedOperation xmi:id="_bszKKZr2Ed2wxcOs-TQPsQ" name="getDescription" visibility="public">
+          <ownedParameter xmi:id="_bszKKpr2Ed2wxcOs-TQPsQ" name="return" type="_bs0_OZr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bszKK5r2Ed2wxcOs-TQPsQ" name="accept" visibility="public">
+          <ownedParameter xmi:id="_bszKLJr2Ed2wxcOs-TQPsQ" name="f" type="_bszKSpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszKLZr2Ed2wxcOs-TQPsQ" name="return" type="_bsyiwZr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bszKLpr2Ed2wxcOs-TQPsQ" name="getExtension" visibility="public">
+          <ownedParameter xmi:id="_bszKL5r2Ed2wxcOs-TQPsQ" name="return" type="_bs0_OZr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_bszKMJr2Ed2wxcOs-TQPsQ" name="TuttiFilter">
+        <generalization xmi:id="_bszKMZr2Ed2wxcOs-TQPsQ" general="_bszKYJr2Ed2wxcOs-TQPsQ"/>
+        <ownedOperation xmi:id="_bszKMpr2Ed2wxcOs-TQPsQ" name="getDescription" visibility="public">
+          <ownedParameter xmi:id="_bszKM5r2Ed2wxcOs-TQPsQ" name="return" type="_bs0_OZr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bszKNJr2Ed2wxcOs-TQPsQ" name="accept" visibility="public">
+          <ownedParameter xmi:id="_bszKNZr2Ed2wxcOs-TQPsQ" name="f" type="_bszKSpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszKNpr2Ed2wxcOs-TQPsQ" name="return" type="_bsyiwZr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_bszKN5r2Ed2wxcOs-TQPsQ" name="PNGFilter">
+        <generalization xmi:id="_bszKOJr2Ed2wxcOs-TQPsQ" general="_bszKI5r2Ed2wxcOs-TQPsQ"/>
+        <ownedOperation xmi:id="_bszKOZr2Ed2wxcOs-TQPsQ" name="getDescription" visibility="public">
+          <ownedParameter xmi:id="_bszKOpr2Ed2wxcOs-TQPsQ" name="return" type="_bs0_OZr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bszKO5r2Ed2wxcOs-TQPsQ" name="accept" visibility="public">
+          <ownedParameter xmi:id="_bszKPJr2Ed2wxcOs-TQPsQ" name="f" type="_bszKSpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszKPZr2Ed2wxcOs-TQPsQ" name="return" type="_bsyiwZr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bszKPpr2Ed2wxcOs-TQPsQ" name="getExtension" visibility="public">
+          <ownedParameter xmi:id="_bszKP5r2Ed2wxcOs-TQPsQ" name="return" type="_bs0_OZr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_bszKQJr2Ed2wxcOs-TQPsQ" name="SizeFilter">
+        <generalization xmi:id="_bszKQZr2Ed2wxcOs-TQPsQ" general="_bszKYJr2Ed2wxcOs-TQPsQ"/>
+        <ownedAttribute xmi:id="_bszKQpr2Ed2wxcOs-TQPsQ" name="size" type="_bsyix5r2Ed2wxcOs-TQPsQ"/>
+        <ownedOperation xmi:id="_bszKQ5r2Ed2wxcOs-TQPsQ" name="getDescription" visibility="public">
+          <ownedParameter xmi:id="_bszKRJr2Ed2wxcOs-TQPsQ" name="return" type="_bs0_OZr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bszKRZr2Ed2wxcOs-TQPsQ" name="accept" visibility="public">
+          <ownedParameter xmi:id="_bszKRpr2Ed2wxcOs-TQPsQ" name="f" type="_bszKSpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszKR5r2Ed2wxcOs-TQPsQ" name="return" type="_bsyiwZr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bszKSJr2Ed2wxcOs-TQPsQ" name="getExtension" visibility="public">
+          <ownedParameter xmi:id="_bszKSZr2Ed2wxcOs-TQPsQ" name="return" type="_bs0_OZr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_bszKSpr2Ed2wxcOs-TQPsQ" name="File"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_bszKS5r2Ed2wxcOs-TQPsQ" name="JFrame"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_bszKTJr2Ed2wxcOs-TQPsQ" name="JPanel"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_bszKTZr2Ed2wxcOs-TQPsQ" name="Image"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_bszKTpr2Ed2wxcOs-TQPsQ" name="Object"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_bszKT5r2Ed2wxcOs-TQPsQ" name="Graphics"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_bszKUJr2Ed2wxcOs-TQPsQ" name="javax.swing.JFrame"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_bszKUZr2Ed2wxcOs-TQPsQ" name="javax.swing.JButton"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_bszKUpr2Ed2wxcOs-TQPsQ" name="javax.swing.JComboBox"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_bszKU5r2Ed2wxcOs-TQPsQ" name="javax.swing.JLabel"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_bszKVJr2Ed2wxcOs-TQPsQ" name="javax.swing.JPasswordField"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_bszKVZr2Ed2wxcOs-TQPsQ" name="javax.swing.JTextField"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_bszKVpr2Ed2wxcOs-TQPsQ" name="java.awt.event.ActionEvent"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_bszKV5r2Ed2wxcOs-TQPsQ" name="javax.swing.event.AncestorEvent"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_bszKWJr2Ed2wxcOs-TQPsQ" name="ImageIcon"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_bszKWZr2Ed2wxcOs-TQPsQ" name="Color"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_bszKWpr2Ed2wxcOs-TQPsQ" name="PropertyChangeEvent"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_bszKW5r2Ed2wxcOs-TQPsQ" name="JMenuBar"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_bszKXJr2Ed2wxcOs-TQPsQ" name="JMenu"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_bszKXZr2Ed2wxcOs-TQPsQ" name="JMenuItem"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_bszKXpr2Ed2wxcOs-TQPsQ" name="JSlider"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_bszKX5r2Ed2wxcOs-TQPsQ" name="JLabel"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_bszKYJr2Ed2wxcOs-TQPsQ" name="FileFilter"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_bszKYZr2Ed2wxcOs-TQPsQ" name="JFileChooser"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_bszKYpr2Ed2wxcOs-TQPsQ" name="BufferedImage"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_bszKY5r2Ed2wxcOs-TQPsQ" name="ChangeEvent"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_bszKZJr2Ed2wxcOs-TQPsQ" name="ActionEvent"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_bszKZZr2Ed2wxcOs-TQPsQ" name="javax.swing.JPanel"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_bszKZpr2Ed2wxcOs-TQPsQ" name="javax.swing.JScrollPane"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_bszKZ5r2Ed2wxcOs-TQPsQ" name="javax.swing.JSlider"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_bszKaJr2Ed2wxcOs-TQPsQ" name="javax.swing.JTextArea"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_bszKaZr2Ed2wxcOs-TQPsQ" name="org.jdesktop.beansbinding.BindingGroup"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_bszKapr2Ed2wxcOs-TQPsQ" memberEnd="_bsyjJ5r2Ed2wxcOs-TQPsQ _bszKa5r2Ed2wxcOs-TQPsQ">
+      <ownedEnd xmi:id="_bszKa5r2Ed2wxcOs-TQPsQ" name="target" type="_bsyjFpr2Ed2wxcOs-TQPsQ" association="_bszKapr2Ed2wxcOs-TQPsQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_bszKbJr2Ed2wxcOs-TQPsQ" memberEnd="_bsyjKJr2Ed2wxcOs-TQPsQ _bszKbZr2Ed2wxcOs-TQPsQ">
+      <ownedEnd xmi:id="_bszKbZr2Ed2wxcOs-TQPsQ" name="target" type="_bsyjFpr2Ed2wxcOs-TQPsQ" association="_bszKbJr2Ed2wxcOs-TQPsQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_bszKbpr2Ed2wxcOs-TQPsQ" memberEnd="_bsyjLpr2Ed2wxcOs-TQPsQ _bszKb5r2Ed2wxcOs-TQPsQ">
+      <ownedEnd xmi:id="_bszKb5r2Ed2wxcOs-TQPsQ" name="target" type="_bsyjFpr2Ed2wxcOs-TQPsQ" association="_bszKbpr2Ed2wxcOs-TQPsQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_bszKcJr2Ed2wxcOs-TQPsQ" memberEnd="_bsyjM5r2Ed2wxcOs-TQPsQ _bszKcZr2Ed2wxcOs-TQPsQ">
+      <ownedEnd xmi:id="_bszKcZr2Ed2wxcOs-TQPsQ" name="target" type="_bsyjFpr2Ed2wxcOs-TQPsQ" association="_bszKcJr2Ed2wxcOs-TQPsQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_bszKcpr2Ed2wxcOs-TQPsQ" memberEnd="_bszKCJr2Ed2wxcOs-TQPsQ _bszKc5r2Ed2wxcOs-TQPsQ">
+      <ownedEnd xmi:id="_bszKc5r2Ed2wxcOs-TQPsQ" name="target" type="_bszKB5r2Ed2wxcOs-TQPsQ" association="_bszKcpr2Ed2wxcOs-TQPsQ"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_bszKdJr2Ed2wxcOs-TQPsQ" name="ssis">
+    <packagedElement xmi:type="uml:Class" xmi:id="_bszKdZr2Ed2wxcOs-TQPsQ" name="SSISUnembedder">
+      <generalization xmi:id="_bszKdpr2Ed2wxcOs-TQPsQ" general="_bszKoZr2Ed2wxcOs-TQPsQ"/>
+      <ownedOperation xmi:id="_bszKd5r2Ed2wxcOs-TQPsQ" name="unembed" visibility="public">
+        <ownedParameter xmi:id="_bszKeJr2Ed2wxcOs-TQPsQ" name="numOfEmbeddedBit" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszKeZr2Ed2wxcOs-TQPsQ" name="return" type="_bs0_OZr2Ed2wxcOs-TQPsQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bszKepr2Ed2wxcOs-TQPsQ" name="unembed" visibility="public">
+        <ownedParameter xmi:id="_bszKe5r2Ed2wxcOs-TQPsQ" name="return" type="_bs0_OZr2Ed2wxcOs-TQPsQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bszKfJr2Ed2wxcOs-TQPsQ" name="unembed" visibility="public">
+        <ownedParameter xmi:id="_bszKfZr2Ed2wxcOs-TQPsQ" name="numOfEmbeddedBit" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszKfpr2Ed2wxcOs-TQPsQ" name="m" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszKf5r2Ed2wxcOs-TQPsQ" name="r" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszKgJr2Ed2wxcOs-TQPsQ" name="eccIteration" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszKgZr2Ed2wxcOs-TQPsQ" name="return" type="_bs0_OZr2Ed2wxcOs-TQPsQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bszKgpr2Ed2wxcOs-TQPsQ" name="unembed" visibility="public">
+        <ownedParameter xmi:id="_bszKg5r2Ed2wxcOs-TQPsQ" name="n" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszKhJr2Ed2wxcOs-TQPsQ" name="m" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszKhZr2Ed2wxcOs-TQPsQ" name="eccIteration" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszKhpr2Ed2wxcOs-TQPsQ" name="return" type="_bs0_OZr2Ed2wxcOs-TQPsQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bszKh5r2Ed2wxcOs-TQPsQ" name="getEncodedCharMsgLength" visibility="public">
+        <ownedParameter xmi:id="_bszKiJr2Ed2wxcOs-TQPsQ" name="lunghezzaStringa" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszKiZr2Ed2wxcOs-TQPsQ" name="return" type="_bsyix5r2Ed2wxcOs-TQPsQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bszKipr2Ed2wxcOs-TQPsQ" name="unembed" visibility="public">
+        <ownedParameter xmi:id="_bszKi5r2Ed2wxcOs-TQPsQ" name="immOriginale" type="_bszKYpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszKjJr2Ed2wxcOs-TQPsQ" name="numOfEmbeddedBit" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszKjZr2Ed2wxcOs-TQPsQ" name="n" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszKjpr2Ed2wxcOs-TQPsQ" name="m" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszKj5r2Ed2wxcOs-TQPsQ" name="eccIteration" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszKkJr2Ed2wxcOs-TQPsQ" name="return" type="_bs0_OZr2Ed2wxcOs-TQPsQ" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_bszKkZr2Ed2wxcOs-TQPsQ" name="SSISEmbedder">
+      <generalization xmi:id="_bszKkpr2Ed2wxcOs-TQPsQ" general="_bszKoZr2Ed2wxcOs-TQPsQ"/>
+      <ownedOperation xmi:id="_bszKk5r2Ed2wxcOs-TQPsQ" name="embed" visibility="public">
+        <ownedParameter xmi:id="_bszKlJr2Ed2wxcOs-TQPsQ" name="messaggio" type="_bs0_OZr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszKlZr2Ed2wxcOs-TQPsQ" name="deviazione" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszKlpr2Ed2wxcOs-TQPsQ" name="return" type="_bszKYpr2Ed2wxcOs-TQPsQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bszKl5r2Ed2wxcOs-TQPsQ" name="embed" visibility="public">
+        <ownedParameter xmi:id="_bszKmJr2Ed2wxcOs-TQPsQ" name="messaggio" type="_bs0_OZr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszKmZr2Ed2wxcOs-TQPsQ" name="deviazione" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszKmpr2Ed2wxcOs-TQPsQ" name="m" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszKm5r2Ed2wxcOs-TQPsQ" name="r" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszKnJr2Ed2wxcOs-TQPsQ" name="eccIteration" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszKnZr2Ed2wxcOs-TQPsQ" name="return" type="_bszKYpr2Ed2wxcOs-TQPsQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bszKnpr2Ed2wxcOs-TQPsQ" name="clip" visibility="private">
+        <ownedParameter xmi:id="_bszKn5r2Ed2wxcOs-TQPsQ" name="s" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bszKoJr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixpr2Ed2wxcOs-TQPsQ" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_bszKoZr2Ed2wxcOs-TQPsQ" name="SSIS">
+      <ownedAttribute xmi:id="_bszKopr2Ed2wxcOs-TQPsQ" name="immagine" visibility="protected" type="_bszKYpr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bszKo5r2Ed2wxcOs-TQPsQ" name="raggio" visibility="protected" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bszKpJr2Ed2wxcOs-TQPsQ" name="noiseSeed" visibility="protected" type="_bsyix5r2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bszKpZr2Ed2wxcOs-TQPsQ" name="interleaverSeed" visibility="protected" type="_bsyix5r2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bszKppr2Ed2wxcOs-TQPsQ" name="modulatorSeed" visibility="protected" type="_bsyix5r2Ed2wxcOs-TQPsQ"/>
+      <ownedAttribute xmi:id="_bszKp5r2Ed2wxcOs-TQPsQ" name="tipoECC" visibility="protected" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_bszKqJr2Ed2wxcOs-TQPsQ" name="ecc">
+      <packagedElement xmi:type="uml:Class" xmi:id="_bszKqZr2Ed2wxcOs-TQPsQ" name="ECCFactory" clientDependency="_bszKqpr2Ed2wxcOs-TQPsQ _bszKq5r2Ed2wxcOs-TQPsQ">
+        <interfaceRealization xmi:id="_bszKqpr2Ed2wxcOs-TQPsQ" name="ECCEncoder" supplier="_bszK15r2Ed2wxcOs-TQPsQ" client="_bszKqZr2Ed2wxcOs-TQPsQ" contract="_bszK15r2Ed2wxcOs-TQPsQ"/>
+        <interfaceRealization xmi:id="_bszKq5r2Ed2wxcOs-TQPsQ" name="ECCDecoder" supplier="_bszKyJr2Ed2wxcOs-TQPsQ" client="_bszKqZr2Ed2wxcOs-TQPsQ" contract="_bszKyJr2Ed2wxcOs-TQPsQ"/>
+        <ownedOperation xmi:id="_bszKrJr2Ed2wxcOs-TQPsQ" name="getDecoderInstance" visibility="public" isStatic="true">
+          <ownedParameter xmi:id="_bszKrZr2Ed2wxcOs-TQPsQ" name="tipoECC" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszKrpr2Ed2wxcOs-TQPsQ" name="return" type="_bszKyJr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bszKr5r2Ed2wxcOs-TQPsQ" name="getDecoderInstance" visibility="public" isStatic="true">
+          <ownedParameter xmi:id="_bszKsJr2Ed2wxcOs-TQPsQ" name="n" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszKsZr2Ed2wxcOs-TQPsQ" name="m" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszKspr2Ed2wxcOs-TQPsQ" name="tipoECC" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszKs5r2Ed2wxcOs-TQPsQ" name="return" type="_bszKyJr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bszKtJr2Ed2wxcOs-TQPsQ" name="getDecoderInstance" visibility="public" isStatic="true">
+          <ownedParameter xmi:id="_bszKtZr2Ed2wxcOs-TQPsQ" name="n" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszKtpr2Ed2wxcOs-TQPsQ" name="m" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszKt5r2Ed2wxcOs-TQPsQ" name="iterazioni" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszKuJr2Ed2wxcOs-TQPsQ" name="tipoECC" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszKuZr2Ed2wxcOs-TQPsQ" name="return" type="_bszKyJr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bszKupr2Ed2wxcOs-TQPsQ" name="getEncoderInstance" visibility="public" isStatic="true">
+          <ownedParameter xmi:id="_bszKu5r2Ed2wxcOs-TQPsQ" name="tipoECC" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszKvJr2Ed2wxcOs-TQPsQ" name="return" type="_bszK15r2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bszKvZr2Ed2wxcOs-TQPsQ" name="getEncoderInstance" visibility="public" isStatic="true">
+          <ownedParameter xmi:id="_bszKvpr2Ed2wxcOs-TQPsQ" name="n" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszKv5r2Ed2wxcOs-TQPsQ" name="m" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszKwJr2Ed2wxcOs-TQPsQ" name="tipoECC" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszKwZr2Ed2wxcOs-TQPsQ" name="return" type="_bszK15r2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bszKwpr2Ed2wxcOs-TQPsQ" name="getEncoderInstance" visibility="public" isStatic="true">
+          <ownedParameter xmi:id="_bszKw5r2Ed2wxcOs-TQPsQ" name="n" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszKxJr2Ed2wxcOs-TQPsQ" name="m" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszKxZr2Ed2wxcOs-TQPsQ" name="iterazioni" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszKxpr2Ed2wxcOs-TQPsQ" name="tipoECC" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszKx5r2Ed2wxcOs-TQPsQ" name="return" type="_bszK15r2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_bszKyJr2Ed2wxcOs-TQPsQ" name="ECCDecoder">
+        <generalization xmi:id="_bszKyZr2Ed2wxcOs-TQPsQ" general="_bszKzZr2Ed2wxcOs-TQPsQ"/>
+        <ownedOperation xmi:id="_bszKypr2Ed2wxcOs-TQPsQ" name="decode" visibility="public">
+          <ownedParameter xmi:id="_bszKy5r2Ed2wxcOs-TQPsQ" name="bitMsg" type="_bsyiwZr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszKzJr2Ed2wxcOs-TQPsQ" name="return" type="_bs0_OZr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_bszKzZr2Ed2wxcOs-TQPsQ" name="ECC">
+        <ownedAttribute xmi:id="_bszKzpr2Ed2wxcOs-TQPsQ" name="ECC_HAMMING" visibility="public" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedAttribute xmi:id="_bszKz5r2Ed2wxcOs-TQPsQ" name="ECC_REED_SOLOMON" visibility="public" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedAttribute xmi:id="_bszK0Jr2Ed2wxcOs-TQPsQ" name="ECC_COMBINED" visibility="public" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedOperation xmi:id="_bszK0Zr2Ed2wxcOs-TQPsQ" name="getEncodedCharMsgLength" visibility="public">
+          <ownedParameter xmi:id="_bszK0pr2Ed2wxcOs-TQPsQ" name="msg" type="_bs0_OZr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszK05r2Ed2wxcOs-TQPsQ" name="return" type="_bsyix5r2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bszK1Jr2Ed2wxcOs-TQPsQ" name="getEncodedBitMsgLength" visibility="public">
+          <ownedParameter xmi:id="_bszK1Zr2Ed2wxcOs-TQPsQ" name="bitMsgLength" type="_bsyix5r2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszK1pr2Ed2wxcOs-TQPsQ" name="return" type="_bsyix5r2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_bszK15r2Ed2wxcOs-TQPsQ" name="ECCEncoder">
+        <generalization xmi:id="_bszK2Jr2Ed2wxcOs-TQPsQ" general="_bszKzZr2Ed2wxcOs-TQPsQ"/>
+        <ownedOperation xmi:id="_bszK2Zr2Ed2wxcOs-TQPsQ" name="encode" visibility="public">
+          <ownedParameter xmi:id="_bszK2pr2Ed2wxcOs-TQPsQ" name="msg" type="_bs0_OZr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszK25r2Ed2wxcOs-TQPsQ" name="return" type="_bsyiwZr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bszK3Jr2Ed2wxcOs-TQPsQ" name="encode" visibility="public">
+          <ownedParameter xmi:id="_bszK3Zr2Ed2wxcOs-TQPsQ" name="bitMsg" type="_bsyiwZr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszK3pr2Ed2wxcOs-TQPsQ" name="return" type="_bsyiwZr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_bszK35r2Ed2wxcOs-TQPsQ" name="combined_H_RS">
+        <packagedElement xmi:type="uml:Class" xmi:id="_bszK4Jr2Ed2wxcOs-TQPsQ" name="CombinedHammRS" clientDependency="_bszK65r2Ed2wxcOs-TQPsQ">
+          <ownedAttribute xmi:id="_bszK4Zr2Ed2wxcOs-TQPsQ" name="n" visibility="protected" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszK4pr2Ed2wxcOs-TQPsQ" name="m" visibility="protected" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszK45r2Ed2wxcOs-TQPsQ" name="r" visibility="protected" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszK5Jr2Ed2wxcOs-TQPsQ" name="iterazioni" visibility="protected" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszK5Zr2Ed2wxcOs-TQPsQ" name="HAMMING_N" visibility="public" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszK5pr2Ed2wxcOs-TQPsQ" name="HAMMING_M" visibility="public" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszK55r2Ed2wxcOs-TQPsQ" name="HAMMING_ITERATION" visibility="public" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszK6Jr2Ed2wxcOs-TQPsQ" name="RS_N" visibility="public" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszK6Zr2Ed2wxcOs-TQPsQ" name="RS_M" visibility="public" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszK6pr2Ed2wxcOs-TQPsQ" name="RS_ITERATION" visibility="public" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <interfaceRealization xmi:id="_bszK65r2Ed2wxcOs-TQPsQ" name="ECC" supplier="_bszKzZr2Ed2wxcOs-TQPsQ" client="_bszK4Jr2Ed2wxcOs-TQPsQ" contract="_bszKzZr2Ed2wxcOs-TQPsQ"/>
+          <ownedOperation xmi:id="_bszK7Jr2Ed2wxcOs-TQPsQ" name="getEncodedBitMsgLength" visibility="public" isAbstract="true">
+            <ownedParameter xmi:id="_bszK7Zr2Ed2wxcOs-TQPsQ" name="bitMsgLength" type="_bsyix5r2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszK7pr2Ed2wxcOs-TQPsQ" name="return" type="_bsyix5r2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszK75r2Ed2wxcOs-TQPsQ" name="getEncodedCharMsgLength" visibility="public" isAbstract="true">
+            <ownedParameter xmi:id="_bszK8Jr2Ed2wxcOs-TQPsQ" name="msg" type="_bs0_OZr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszK8Zr2Ed2wxcOs-TQPsQ" name="return" type="_bsyix5r2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_bszK8pr2Ed2wxcOs-TQPsQ" name="CombinedHRSDecoder" clientDependency="_bszK9pr2Ed2wxcOs-TQPsQ">
+          <generalization xmi:id="_bszK85r2Ed2wxcOs-TQPsQ" general="_bszK4Jr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszK9Jr2Ed2wxcOs-TQPsQ" name="decHamming" visibility="private" type="_bszKyJr2Ed2wxcOs-TQPsQ" association="_bszLE5r2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszK9Zr2Ed2wxcOs-TQPsQ" name="decRS" visibility="private" type="_bszKyJr2Ed2wxcOs-TQPsQ" association="_bszLFZr2Ed2wxcOs-TQPsQ"/>
+          <interfaceRealization xmi:id="_bszK9pr2Ed2wxcOs-TQPsQ" name="ECCDecoder" supplier="_bszKyJr2Ed2wxcOs-TQPsQ" client="_bszK8pr2Ed2wxcOs-TQPsQ" contract="_bszKyJr2Ed2wxcOs-TQPsQ"/>
+          <ownedOperation xmi:id="_bszK95r2Ed2wxcOs-TQPsQ" name="decode" visibility="public">
+            <ownedParameter xmi:id="_bszK-Jr2Ed2wxcOs-TQPsQ" name="bitMsg" type="_bsyiwZr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszK-Zr2Ed2wxcOs-TQPsQ" name="return" type="_bs0_OZr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszK-pr2Ed2wxcOs-TQPsQ" name="getEncodedBitMsgLength" visibility="public">
+            <ownedParameter xmi:id="_bszK-5r2Ed2wxcOs-TQPsQ" name="bitMsgLength" type="_bsyix5r2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszK_Jr2Ed2wxcOs-TQPsQ" name="return" type="_bsyix5r2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszK_Zr2Ed2wxcOs-TQPsQ" name="getEncodedCharMsgLength" visibility="public">
+            <ownedParameter xmi:id="_bszK_pr2Ed2wxcOs-TQPsQ" name="msg" type="_bs0_OZr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszK_5r2Ed2wxcOs-TQPsQ" name="return" type="_bsyix5r2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_bszLAJr2Ed2wxcOs-TQPsQ" name="CombinedHRSEncoder" clientDependency="_bszLBJr2Ed2wxcOs-TQPsQ">
+          <generalization xmi:id="_bszLAZr2Ed2wxcOs-TQPsQ" general="_bszK4Jr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszLApr2Ed2wxcOs-TQPsQ" name="encHamming" visibility="private" type="_bszK15r2Ed2wxcOs-TQPsQ" association="_bszw4Zr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszLA5r2Ed2wxcOs-TQPsQ" name="encRS" visibility="private" type="_bszK15r2Ed2wxcOs-TQPsQ" association="_bszw45r2Ed2wxcOs-TQPsQ"/>
+          <interfaceRealization xmi:id="_bszLBJr2Ed2wxcOs-TQPsQ" name="ECCEncoder" supplier="_bszK15r2Ed2wxcOs-TQPsQ" client="_bszLAJr2Ed2wxcOs-TQPsQ" contract="_bszK15r2Ed2wxcOs-TQPsQ"/>
+          <ownedOperation xmi:id="_bszLBZr2Ed2wxcOs-TQPsQ" name="encode" visibility="public">
+            <ownedParameter xmi:id="_bszLBpr2Ed2wxcOs-TQPsQ" name="msg" type="_bs0_OZr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszLB5r2Ed2wxcOs-TQPsQ" name="return" type="_bsyiwZr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszLCJr2Ed2wxcOs-TQPsQ" name="encode" visibility="public">
+            <ownedParameter xmi:id="_bszLCZr2Ed2wxcOs-TQPsQ" name="bitMsg" type="_bsyiwZr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszLCpr2Ed2wxcOs-TQPsQ" name="return" type="_bsyiwZr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszLC5r2Ed2wxcOs-TQPsQ" name="getEncodedBitMsgLength" visibility="public">
+            <ownedParameter xmi:id="_bszLDJr2Ed2wxcOs-TQPsQ" name="bitMsgLength" type="_bsyix5r2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszLDZr2Ed2wxcOs-TQPsQ" name="return" type="_bsyix5r2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszLDpr2Ed2wxcOs-TQPsQ" name="getEncodedCharMsgLength" visibility="public">
+            <ownedParameter xmi:id="_bszLD5r2Ed2wxcOs-TQPsQ" name="msg" type="_bs0_OZr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszLEJr2Ed2wxcOs-TQPsQ" name="return" type="_bsyix5r2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszLEZr2Ed2wxcOs-TQPsQ" name="main" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_bszLEpr2Ed2wxcOs-TQPsQ" name="args" type="_bs0_OZr2Ed2wxcOs-TQPsQ"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_bszLE5r2Ed2wxcOs-TQPsQ" memberEnd="_bszK9Jr2Ed2wxcOs-TQPsQ _bszLFJr2Ed2wxcOs-TQPsQ">
+          <ownedEnd xmi:id="_bszLFJr2Ed2wxcOs-TQPsQ" name="target" type="_bszK8pr2Ed2wxcOs-TQPsQ" association="_bszLE5r2Ed2wxcOs-TQPsQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_bszLFZr2Ed2wxcOs-TQPsQ" memberEnd="_bszK9Zr2Ed2wxcOs-TQPsQ _bszw4Jr2Ed2wxcOs-TQPsQ">
+          <ownedEnd xmi:id="_bszw4Jr2Ed2wxcOs-TQPsQ" name="target" type="_bszK8pr2Ed2wxcOs-TQPsQ" association="_bszLFZr2Ed2wxcOs-TQPsQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_bszw4Zr2Ed2wxcOs-TQPsQ" memberEnd="_bszLApr2Ed2wxcOs-TQPsQ _bszw4pr2Ed2wxcOs-TQPsQ">
+          <ownedEnd xmi:id="_bszw4pr2Ed2wxcOs-TQPsQ" name="target" type="_bszLAJr2Ed2wxcOs-TQPsQ" association="_bszw4Zr2Ed2wxcOs-TQPsQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_bszw45r2Ed2wxcOs-TQPsQ" memberEnd="_bszLA5r2Ed2wxcOs-TQPsQ _bszw5Jr2Ed2wxcOs-TQPsQ">
+          <ownedEnd xmi:id="_bszw5Jr2Ed2wxcOs-TQPsQ" name="target" type="_bszLAJr2Ed2wxcOs-TQPsQ" association="_bszw45r2Ed2wxcOs-TQPsQ"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_bszw5Zr2Ed2wxcOs-TQPsQ" name="hamming">
+        <packagedElement xmi:type="uml:Class" xmi:id="_bszw5pr2Ed2wxcOs-TQPsQ" name="HammingECCEncoder" clientDependency="_bszw6Jr2Ed2wxcOs-TQPsQ">
+          <generalization xmi:id="_bszw55r2Ed2wxcOs-TQPsQ" general="_bszw-Zr2Ed2wxcOs-TQPsQ"/>
+          <interfaceRealization xmi:id="_bszw6Jr2Ed2wxcOs-TQPsQ" name="ECCEncoder" supplier="_bszK15r2Ed2wxcOs-TQPsQ" client="_bszw5pr2Ed2wxcOs-TQPsQ" contract="_bszK15r2Ed2wxcOs-TQPsQ"/>
+          <ownedOperation xmi:id="_bszw6Zr2Ed2wxcOs-TQPsQ" name="encode" visibility="public">
+            <ownedParameter xmi:id="_bszw6pr2Ed2wxcOs-TQPsQ" name="msg" type="_bs0_OZr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszw65r2Ed2wxcOs-TQPsQ" name="return" type="_bsyiwZr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszw7Jr2Ed2wxcOs-TQPsQ" name="encode" visibility="public">
+            <ownedParameter xmi:id="_bszw7Zr2Ed2wxcOs-TQPsQ" name="bitMsg" type="_bsyiwZr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszw7pr2Ed2wxcOs-TQPsQ" name="return" type="_bsyiwZr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszw75r2Ed2wxcOs-TQPsQ" name="encode" visibility="private">
+            <ownedParameter xmi:id="_bszw8Jr2Ed2wxcOs-TQPsQ" name="bitMsg" type="_bsyiwZr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszw8Zr2Ed2wxcOs-TQPsQ" name="iterazioni" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszw8pr2Ed2wxcOs-TQPsQ" name="return" type="_bsyiwZr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszw85r2Ed2wxcOs-TQPsQ" name="generaArrayValoriBitAssociati" visibility="private" isStatic="true">
+            <ownedParameter xmi:id="_bszw9Jr2Ed2wxcOs-TQPsQ" name="bitParita" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszw9Zr2Ed2wxcOs-TQPsQ" name="iesimoBitControllo" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszw9pr2Ed2wxcOs-TQPsQ" name="arrayCodeword" type="_bsyiwZr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszw95r2Ed2wxcOs-TQPsQ" name="iesimaCodeword" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszw-Jr2Ed2wxcOs-TQPsQ" name="return" type="_bsyiwZr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_bszw-Zr2Ed2wxcOs-TQPsQ" name="HammingECC" clientDependency="_bszxApr2Ed2wxcOs-TQPsQ">
+          <ownedAttribute xmi:id="_bszw-pr2Ed2wxcOs-TQPsQ" name="n" visibility="protected" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszw-5r2Ed2wxcOs-TQPsQ" name="m" visibility="protected" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszw_Jr2Ed2wxcOs-TQPsQ" name="r" visibility="protected" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszw_Zr2Ed2wxcOs-TQPsQ" name="iterazioni" visibility="protected" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszw_pr2Ed2wxcOs-TQPsQ" name="STANDARD_N" visibility="public" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszw_5r2Ed2wxcOs-TQPsQ" name="STANDARD_M" visibility="public" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszxAJr2Ed2wxcOs-TQPsQ" name="STANDARD_R" visibility="public" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszxAZr2Ed2wxcOs-TQPsQ" name="STANDARD_ITER" visibility="public" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <interfaceRealization xmi:id="_bszxApr2Ed2wxcOs-TQPsQ" name="ECC" supplier="_bszKzZr2Ed2wxcOs-TQPsQ" client="_bszw-Zr2Ed2wxcOs-TQPsQ" contract="_bszKzZr2Ed2wxcOs-TQPsQ"/>
+          <ownedOperation xmi:id="_bszxA5r2Ed2wxcOs-TQPsQ" name="getEncodedCharMsgLength" visibility="public">
+            <ownedParameter xmi:id="_bszxBJr2Ed2wxcOs-TQPsQ" name="msg" type="_bs0_OZr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxBZr2Ed2wxcOs-TQPsQ" name="return" type="_bsyix5r2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxBpr2Ed2wxcOs-TQPsQ" name="getEncodedBitMsgLength" visibility="public">
+            <ownedParameter xmi:id="_bszxB5r2Ed2wxcOs-TQPsQ" name="bitMsgLength" type="_bsyix5r2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxCJr2Ed2wxcOs-TQPsQ" name="return" type="_bsyix5r2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxCZr2Ed2wxcOs-TQPsQ" name="generaMatriceBitControllo_bitAssociati" visibility="protected" isStatic="true">
+            <ownedParameter xmi:id="_bszxCpr2Ed2wxcOs-TQPsQ" name="bitControllo" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxC5r2Ed2wxcOs-TQPsQ" name="m" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxDJr2Ed2wxcOs-TQPsQ" name="r" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxDZr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixpr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxDpr2Ed2wxcOs-TQPsQ" name="generaPosizioniBitControllo" visibility="protected" isStatic="true">
+            <ownedParameter xmi:id="_bszxD5r2Ed2wxcOs-TQPsQ" name="m" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxEJr2Ed2wxcOs-TQPsQ" name="r" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxEZr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixpr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxEpr2Ed2wxcOs-TQPsQ" name="pad" visibility="protected" isStatic="true">
+            <ownedParameter xmi:id="_bszxE5r2Ed2wxcOs-TQPsQ" name="bitMsg" type="_bsyiwZr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxFJr2Ed2wxcOs-TQPsQ" name="multiplo" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxFZr2Ed2wxcOs-TQPsQ" name="return" type="_bsyiwZr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxFpr2Ed2wxcOs-TQPsQ" name="isDispari" visibility="protected" isStatic="true">
+            <ownedParameter xmi:id="_bszxF5r2Ed2wxcOs-TQPsQ" name="array" type="_bsyiwZr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxGJr2Ed2wxcOs-TQPsQ" name="return" type="_bsyiwZr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxGZr2Ed2wxcOs-TQPsQ" name="main" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_bszxGpr2Ed2wxcOs-TQPsQ" name="args" type="_bs0_OZr2Ed2wxcOs-TQPsQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxG5r2Ed2wxcOs-TQPsQ" name="encodeFor1ErrOnX" visibility="private" isStatic="true">
+            <ownedParameter xmi:id="_bszxHJr2Ed2wxcOs-TQPsQ" name="x" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxHZr2Ed2wxcOs-TQPsQ" name="rOttimale" visibility="private" isStatic="true">
+            <ownedParameter xmi:id="_bszxHpr2Ed2wxcOs-TQPsQ" name="m" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxH5r2Ed2wxcOs-TQPsQ" name="return" type="_bsyixpr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_bszxIJr2Ed2wxcOs-TQPsQ" name="HammingECCDecoder" clientDependency="_bszxIpr2Ed2wxcOs-TQPsQ">
+          <generalization xmi:id="_bszxIZr2Ed2wxcOs-TQPsQ" general="_bszw-Zr2Ed2wxcOs-TQPsQ"/>
+          <interfaceRealization xmi:id="_bszxIpr2Ed2wxcOs-TQPsQ" name="ECCDecoder" supplier="_bszKyJr2Ed2wxcOs-TQPsQ" client="_bszxIJr2Ed2wxcOs-TQPsQ" contract="_bszKyJr2Ed2wxcOs-TQPsQ"/>
+          <ownedOperation xmi:id="_bszxI5r2Ed2wxcOs-TQPsQ" name="decode" visibility="public">
+            <ownedParameter xmi:id="_bszxJJr2Ed2wxcOs-TQPsQ" name="bitMsg" type="_bsyiwZr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxJZr2Ed2wxcOs-TQPsQ" name="return" type="_bs0_OZr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxJpr2Ed2wxcOs-TQPsQ" name="decode" visibility="private">
+            <ownedParameter xmi:id="_bszxJ5r2Ed2wxcOs-TQPsQ" name="bitMsg" type="_bsyiwZr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxKJr2Ed2wxcOs-TQPsQ" name="iterazioni" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxKZr2Ed2wxcOs-TQPsQ" name="return" type="_bs0_OZr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_bszxKpr2Ed2wxcOs-TQPsQ" name="reedSolomon">
+        <packagedElement xmi:type="uml:Class" xmi:id="_bszxK5r2Ed2wxcOs-TQPsQ" name="Galois">
+          <ownedAttribute xmi:id="_bszxLJr2Ed2wxcOs-TQPsQ" name="TBL_DIM" visibility="private" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszxLZr2Ed2wxcOs-TQPsQ" name="POLYNOMIAL" visibility="public" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszxLpr2Ed2wxcOs-TQPsQ" name="instance" visibility="private" type="_bszxK5r2Ed2wxcOs-TQPsQ" association="_bszx2pr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszxL5r2Ed2wxcOs-TQPsQ" name="expTbl" visibility="private" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszxMJr2Ed2wxcOs-TQPsQ" name="logTbl" visibility="private" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedOperation xmi:id="_bszxMZr2Ed2wxcOs-TQPsQ" name="getInstance" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_bszxMpr2Ed2wxcOs-TQPsQ" name="return" type="_bszxK5r2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxM5r2Ed2wxcOs-TQPsQ" name="initGaloisTable" visibility="private"/>
+          <ownedOperation xmi:id="_bszxNJr2Ed2wxcOs-TQPsQ" name="toExp" visibility="public">
+            <ownedParameter xmi:id="_bszxNZr2Ed2wxcOs-TQPsQ" name="a" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxNpr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixpr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxN5r2Ed2wxcOs-TQPsQ" name="toLog" visibility="public">
+            <ownedParameter xmi:id="_bszxOJr2Ed2wxcOs-TQPsQ" name="a" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxOZr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixpr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxOpr2Ed2wxcOs-TQPsQ" name="toPos" visibility="public">
+            <ownedParameter xmi:id="_bszxO5r2Ed2wxcOs-TQPsQ" name="length" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxPJr2Ed2wxcOs-TQPsQ" name="a" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxPZr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixpr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxPpr2Ed2wxcOs-TQPsQ" name="mul" visibility="public">
+            <ownedParameter xmi:id="_bszxP5r2Ed2wxcOs-TQPsQ" name="a" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxQJr2Ed2wxcOs-TQPsQ" name="b" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxQZr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixpr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxQpr2Ed2wxcOs-TQPsQ" name="mulExp" visibility="public">
+            <ownedParameter xmi:id="_bszxQ5r2Ed2wxcOs-TQPsQ" name="a" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxRJr2Ed2wxcOs-TQPsQ" name="b" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxRZr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixpr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxRpr2Ed2wxcOs-TQPsQ" name="div" visibility="public">
+            <ownedParameter xmi:id="_bszxR5r2Ed2wxcOs-TQPsQ" name="a" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxSJr2Ed2wxcOs-TQPsQ" name="b" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxSZr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixpr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxSpr2Ed2wxcOs-TQPsQ" name="divExp" visibility="public">
+            <ownedParameter xmi:id="_bszxS5r2Ed2wxcOs-TQPsQ" name="a" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxTJr2Ed2wxcOs-TQPsQ" name="b" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxTZr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixpr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxTpr2Ed2wxcOs-TQPsQ" name="inv" visibility="public">
+            <ownedParameter xmi:id="_bszxT5r2Ed2wxcOs-TQPsQ" name="a" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxUJr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixpr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxUZr2Ed2wxcOs-TQPsQ" name="mulPoly" visibility="public">
+            <ownedParameter xmi:id="_bszxUpr2Ed2wxcOs-TQPsQ" name="seki" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxU5r2Ed2wxcOs-TQPsQ" name="a" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxVJr2Ed2wxcOs-TQPsQ" name="b" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxVZr2Ed2wxcOs-TQPsQ" name="calcSyndrome" visibility="public">
+            <ownedParameter xmi:id="_bszxVpr2Ed2wxcOs-TQPsQ" name="data" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxV5r2Ed2wxcOs-TQPsQ" name="length" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxWJr2Ed2wxcOs-TQPsQ" name="syn" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxWZr2Ed2wxcOs-TQPsQ" name="return" type="_bsyiwZr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_bszxWpr2Ed2wxcOs-TQPsQ" name="RsEncode">
+          <ownedAttribute xmi:id="_bszxW5r2Ed2wxcOs-TQPsQ" name="RS_PERM_ERROR" visibility="public" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszxXJr2Ed2wxcOs-TQPsQ" name="galois" visibility="private" type="_bszxK5r2Ed2wxcOs-TQPsQ" association="_bszx3Jr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszxXZr2Ed2wxcOs-TQPsQ" name="npar" visibility="private" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszxXpr2Ed2wxcOs-TQPsQ" name="encodeGx" visibility="private" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedOperation xmi:id="_bszxX5r2Ed2wxcOs-TQPsQ" name="makeEncodeGx" visibility="private"/>
+          <ownedOperation xmi:id="_bszxYJr2Ed2wxcOs-TQPsQ" name="encode" visibility="public">
+            <ownedParameter xmi:id="_bszxYZr2Ed2wxcOs-TQPsQ" name="data" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxYpr2Ed2wxcOs-TQPsQ" name="length" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxY5r2Ed2wxcOs-TQPsQ" name="parity" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxZJr2Ed2wxcOs-TQPsQ" name="parityStartPos" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxZZr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixpr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxZpr2Ed2wxcOs-TQPsQ" name="encode" visibility="public">
+            <ownedParameter xmi:id="_bszxZ5r2Ed2wxcOs-TQPsQ" name="data" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxaJr2Ed2wxcOs-TQPsQ" name="length" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxaZr2Ed2wxcOs-TQPsQ" name="parity" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxapr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixpr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxa5r2Ed2wxcOs-TQPsQ" name="encode" visibility="public">
+            <ownedParameter xmi:id="_bszxbJr2Ed2wxcOs-TQPsQ" name="data" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxbZr2Ed2wxcOs-TQPsQ" name="parity" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxbpr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixpr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxb5r2Ed2wxcOs-TQPsQ" name="main" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_bszxcJr2Ed2wxcOs-TQPsQ" name="args" type="_bs0_OZr2Ed2wxcOs-TQPsQ"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_bszxcZr2Ed2wxcOs-TQPsQ" name="RsDecode">
+          <ownedAttribute xmi:id="_bszxcpr2Ed2wxcOs-TQPsQ" name="RS_PERM_ERROR" visibility="public" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszxc5r2Ed2wxcOs-TQPsQ" name="RS_CORRECT_ERROR" visibility="public" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszxdJr2Ed2wxcOs-TQPsQ" name="galois" visibility="private" type="_bszxK5r2Ed2wxcOs-TQPsQ" association="_bszx3pr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszxdZr2Ed2wxcOs-TQPsQ" name="npar" visibility="private" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedOperation xmi:id="_bszxdpr2Ed2wxcOs-TQPsQ" name="calcSigmaMBM" visibility="public">
+            <ownedParameter xmi:id="_bszxd5r2Ed2wxcOs-TQPsQ" name="sigma" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxeJr2Ed2wxcOs-TQPsQ" name="omega" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxeZr2Ed2wxcOs-TQPsQ" name="syn" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxepr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixpr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxe5r2Ed2wxcOs-TQPsQ" name="setLastErrorPos" visibility="private">
+            <ownedParameter xmi:id="_bszxfJr2Ed2wxcOs-TQPsQ" name="pos" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxfZr2Ed2wxcOs-TQPsQ" name="n" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxfpr2Ed2wxcOs-TQPsQ" name="last" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxf5r2Ed2wxcOs-TQPsQ" name="return" type="_bsyixpr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxgJr2Ed2wxcOs-TQPsQ" name="chienSearch" visibility="private">
+            <ownedParameter xmi:id="_bszxgZr2Ed2wxcOs-TQPsQ" name="pos" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxgpr2Ed2wxcOs-TQPsQ" name="n" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxg5r2Ed2wxcOs-TQPsQ" name="jisu" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxhJr2Ed2wxcOs-TQPsQ" name="sigma" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxhZr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixpr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxhpr2Ed2wxcOs-TQPsQ" name="doForney" visibility="private">
+            <ownedParameter xmi:id="_bszxh5r2Ed2wxcOs-TQPsQ" name="data" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxiJr2Ed2wxcOs-TQPsQ" name="length" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxiZr2Ed2wxcOs-TQPsQ" name="jisu" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxipr2Ed2wxcOs-TQPsQ" name="pos" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxi5r2Ed2wxcOs-TQPsQ" name="sigma" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxjJr2Ed2wxcOs-TQPsQ" name="omega" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxjZr2Ed2wxcOs-TQPsQ" name="decode" visibility="public">
+            <ownedParameter xmi:id="_bszxjpr2Ed2wxcOs-TQPsQ" name="data" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxj5r2Ed2wxcOs-TQPsQ" name="length" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxkJr2Ed2wxcOs-TQPsQ" name="noCorrect" type="_bsyiwZr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxkZr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixpr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxkpr2Ed2wxcOs-TQPsQ" name="decode" visibility="public">
+            <ownedParameter xmi:id="_bszxk5r2Ed2wxcOs-TQPsQ" name="data" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxlJr2Ed2wxcOs-TQPsQ" name="length" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxlZr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixpr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxlpr2Ed2wxcOs-TQPsQ" name="decode" visibility="public">
+            <ownedParameter xmi:id="_bszxl5r2Ed2wxcOs-TQPsQ" name="data" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxmJr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixpr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxmZr2Ed2wxcOs-TQPsQ" name="main" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_bszxmpr2Ed2wxcOs-TQPsQ" name="args" type="_bs0_OZr2Ed2wxcOs-TQPsQ"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_bszxm5r2Ed2wxcOs-TQPsQ" name="RsBinaryDecode" clientDependency="_bszxnZr2Ed2wxcOs-TQPsQ">
+          <generalization xmi:id="_bszxnJr2Ed2wxcOs-TQPsQ" general="_bszxzJr2Ed2wxcOs-TQPsQ"/>
+          <interfaceRealization xmi:id="_bszxnZr2Ed2wxcOs-TQPsQ" name="ECCDecoder" supplier="_bszKyJr2Ed2wxcOs-TQPsQ" client="_bszxm5r2Ed2wxcOs-TQPsQ" contract="_bszKyJr2Ed2wxcOs-TQPsQ"/>
+          <ownedOperation xmi:id="_bszxnpr2Ed2wxcOs-TQPsQ" name="decode_aux" visibility="private">
+            <ownedParameter xmi:id="_bszxn5r2Ed2wxcOs-TQPsQ" name="data" type="_bsyiwZr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxoJr2Ed2wxcOs-TQPsQ" name="iterazioni" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxoZr2Ed2wxcOs-TQPsQ" name="return" type="_bsyiwZr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxopr2Ed2wxcOs-TQPsQ" name="decode" visibility="public">
+            <ownedParameter xmi:id="_bszxo5r2Ed2wxcOs-TQPsQ" name="bitMsg" type="_bsyiwZr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxpJr2Ed2wxcOs-TQPsQ" name="return" type="_bs0_OZr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_bszxpZr2Ed2wxcOs-TQPsQ" name="RsBinaryEncode" clientDependency="_bszxp5r2Ed2wxcOs-TQPsQ">
+          <generalization xmi:id="_bszxppr2Ed2wxcOs-TQPsQ" general="_bszxzJr2Ed2wxcOs-TQPsQ"/>
+          <interfaceRealization xmi:id="_bszxp5r2Ed2wxcOs-TQPsQ" name="ECCEncoder" supplier="_bszK15r2Ed2wxcOs-TQPsQ" client="_bszxpZr2Ed2wxcOs-TQPsQ" contract="_bszK15r2Ed2wxcOs-TQPsQ"/>
+          <ownedOperation xmi:id="_bszxqJr2Ed2wxcOs-TQPsQ" name="encode" visibility="public">
+            <ownedParameter xmi:id="_bszxqZr2Ed2wxcOs-TQPsQ" name="msg" type="_bs0_OZr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxqpr2Ed2wxcOs-TQPsQ" name="return" type="_bsyiwZr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxq5r2Ed2wxcOs-TQPsQ" name="encode" visibility="public">
+            <ownedParameter xmi:id="_bszxrJr2Ed2wxcOs-TQPsQ" name="data" type="_bsyiwZr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxrZr2Ed2wxcOs-TQPsQ" name="return" type="_bsyiwZr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxrpr2Ed2wxcOs-TQPsQ" name="encode" visibility="public">
+            <ownedParameter xmi:id="_bszxr5r2Ed2wxcOs-TQPsQ" name="data" type="_bsyiwZr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxsJr2Ed2wxcOs-TQPsQ" name="iterazioni" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxsZr2Ed2wxcOs-TQPsQ" name="return" type="_bsyiwZr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxspr2Ed2wxcOs-TQPsQ" name="pad" visibility="private" isStatic="true">
+            <ownedParameter xmi:id="_bszxs5r2Ed2wxcOs-TQPsQ" name="bitMsg" type="_bsyiwZr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxtJr2Ed2wxcOs-TQPsQ" name="multiplo" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxtZr2Ed2wxcOs-TQPsQ" name="return" type="_bsyiwZr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxtpr2Ed2wxcOs-TQPsQ" name="main" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_bszxt5r2Ed2wxcOs-TQPsQ" name="args" type="_bs0_OZr2Ed2wxcOs-TQPsQ"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_bszxuJr2Ed2wxcOs-TQPsQ" name="BCH_15_5">
+          <ownedAttribute xmi:id="_bszxuZr2Ed2wxcOs-TQPsQ" name="GX" visibility="private" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszxupr2Ed2wxcOs-TQPsQ" name="instance" visibility="private" type="_bszxuJr2Ed2wxcOs-TQPsQ" association="_bszx4Jr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszxu5r2Ed2wxcOs-TQPsQ" name="trueCodes" visibility="private" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedOperation xmi:id="_bszxvJr2Ed2wxcOs-TQPsQ" name="getInstance" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_bszxvZr2Ed2wxcOs-TQPsQ" name="return" type="_bszxuJr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxvpr2Ed2wxcOs-TQPsQ" name="makeTrueCodes" visibility="private"/>
+          <ownedOperation xmi:id="_bszxv5r2Ed2wxcOs-TQPsQ" name="slowEncode" visibility="private">
+            <ownedParameter xmi:id="_bszxwJr2Ed2wxcOs-TQPsQ" name="data" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxwZr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixpr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxwpr2Ed2wxcOs-TQPsQ" name="encode" visibility="public">
+            <ownedParameter xmi:id="_bszxw5r2Ed2wxcOs-TQPsQ" name="data" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxxJr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixpr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxxZr2Ed2wxcOs-TQPsQ" name="calcDistance" visibility="private" isStatic="true">
+            <ownedParameter xmi:id="_bszxxpr2Ed2wxcOs-TQPsQ" name="c1" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxx5r2Ed2wxcOs-TQPsQ" name="c2" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxyJr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixpr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszxyZr2Ed2wxcOs-TQPsQ" name="decode" visibility="public">
+            <ownedParameter xmi:id="_bszxypr2Ed2wxcOs-TQPsQ" name="data" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszxy5r2Ed2wxcOs-TQPsQ" name="return" type="_bsyixpr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_bszxzJr2Ed2wxcOs-TQPsQ" name="RS_ECC" clientDependency="_bszx05r2Ed2wxcOs-TQPsQ">
+          <ownedAttribute xmi:id="_bszxzZr2Ed2wxcOs-TQPsQ" name="n" visibility="protected" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszxzpr2Ed2wxcOs-TQPsQ" name="m" visibility="protected" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszxz5r2Ed2wxcOs-TQPsQ" name="iterazioni" visibility="protected" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszx0Jr2Ed2wxcOs-TQPsQ" name="STANDARD_N" visibility="public" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszx0Zr2Ed2wxcOs-TQPsQ" name="STANDARD_M" visibility="public" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszx0pr2Ed2wxcOs-TQPsQ" name="STANDARD_ITER" visibility="public" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <interfaceRealization xmi:id="_bszx05r2Ed2wxcOs-TQPsQ" name="ECC" supplier="_bszKzZr2Ed2wxcOs-TQPsQ" client="_bszxzJr2Ed2wxcOs-TQPsQ" contract="_bszKzZr2Ed2wxcOs-TQPsQ"/>
+          <ownedOperation xmi:id="_bszx1Jr2Ed2wxcOs-TQPsQ" name="getEncodedCharMsgLength" visibility="public">
+            <ownedParameter xmi:id="_bszx1Zr2Ed2wxcOs-TQPsQ" name="msg" type="_bs0_OZr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszx1pr2Ed2wxcOs-TQPsQ" name="return" type="_bsyix5r2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszx15r2Ed2wxcOs-TQPsQ" name="getEncodedBitMsgLength" visibility="public">
+            <ownedParameter xmi:id="_bszx2Jr2Ed2wxcOs-TQPsQ" name="bitMsgLength" type="_bsyix5r2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszx2Zr2Ed2wxcOs-TQPsQ" name="return" type="_bsyix5r2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_bszx2pr2Ed2wxcOs-TQPsQ" memberEnd="_bszxLpr2Ed2wxcOs-TQPsQ _bszx25r2Ed2wxcOs-TQPsQ">
+          <ownedEnd xmi:id="_bszx25r2Ed2wxcOs-TQPsQ" name="target" type="_bszxK5r2Ed2wxcOs-TQPsQ" association="_bszx2pr2Ed2wxcOs-TQPsQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_bszx3Jr2Ed2wxcOs-TQPsQ" memberEnd="_bszxXJr2Ed2wxcOs-TQPsQ _bszx3Zr2Ed2wxcOs-TQPsQ">
+          <ownedEnd xmi:id="_bszx3Zr2Ed2wxcOs-TQPsQ" name="target" type="_bszxWpr2Ed2wxcOs-TQPsQ" association="_bszx3Jr2Ed2wxcOs-TQPsQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_bszx3pr2Ed2wxcOs-TQPsQ" memberEnd="_bszxdJr2Ed2wxcOs-TQPsQ _bszx35r2Ed2wxcOs-TQPsQ">
+          <ownedEnd xmi:id="_bszx35r2Ed2wxcOs-TQPsQ" name="target" type="_bszxcZr2Ed2wxcOs-TQPsQ" association="_bszx3pr2Ed2wxcOs-TQPsQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_bszx4Jr2Ed2wxcOs-TQPsQ" memberEnd="_bszxupr2Ed2wxcOs-TQPsQ _bszx4Zr2Ed2wxcOs-TQPsQ">
+          <ownedEnd xmi:id="_bszx4Zr2Ed2wxcOs-TQPsQ" name="target" type="_bszxuJr2Ed2wxcOs-TQPsQ" association="_bszx4Jr2Ed2wxcOs-TQPsQ"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_bszx4pr2Ed2wxcOs-TQPsQ" name="interleavedNoiseModulator">
+      <packagedElement xmi:type="uml:Class" xmi:id="_bszx45r2Ed2wxcOs-TQPsQ" name="InterleavedMoDem">
+        <ownedAttribute xmi:id="_bszx5Jr2Ed2wxcOs-TQPsQ" name="raggio" visibility="private" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedAttribute xmi:id="_bszx5Zr2Ed2wxcOs-TQPsQ" name="interleaverGenerator" visibility="private" type="_bszyMJr2Ed2wxcOs-TQPsQ"/>
+        <ownedAttribute xmi:id="_bszx5pr2Ed2wxcOs-TQPsQ" name="rndUniform" visibility="private" type="_bszyMJr2Ed2wxcOs-TQPsQ"/>
+        <ownedOperation xmi:id="_bszx55r2Ed2wxcOs-TQPsQ" name="signDetectorInterleavedModulator" visibility="public">
+          <ownedParameter xmi:id="_bszx6Jr2Ed2wxcOs-TQPsQ" name="bitMsg" type="_bsyiwZr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszx6Zr2Ed2wxcOs-TQPsQ" name="rumoreGaussiano" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszx6pr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixJr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bszx65r2Ed2wxcOs-TQPsQ" name="signDetectorInterleavedDemodulator" visibility="public">
+          <ownedParameter xmi:id="_bszx7Jr2Ed2wxcOs-TQPsQ" name="lunghezzaMsg" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszx7Zr2Ed2wxcOs-TQPsQ" name="modulatedSignal" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszx7pr2Ed2wxcOs-TQPsQ" name="return" type="_bsyiwZr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bszx75r2Ed2wxcOs-TQPsQ" name="piecewiseInterleavedModulator" visibility="public">
+          <ownedParameter xmi:id="_bszx8Jr2Ed2wxcOs-TQPsQ" name="bitMsg" type="_bsyiwZr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszx8Zr2Ed2wxcOs-TQPsQ" name="rumoreGaussiano" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszx8pr2Ed2wxcOs-TQPsQ" name="deviazione" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszx85r2Ed2wxcOs-TQPsQ" name="return" type="_bsyixJr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bszx9Jr2Ed2wxcOs-TQPsQ" name="piecewiseInterleavedDemodulator" visibility="public">
+          <ownedParameter xmi:id="_bszx9Zr2Ed2wxcOs-TQPsQ" name="numOfEmbeddedBit" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszx9pr2Ed2wxcOs-TQPsQ" name="modulatedSignal" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszx95r2Ed2wxcOs-TQPsQ" name="return" type="_bsyiwZr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bszx-Jr2Ed2wxcOs-TQPsQ" name="g" visibility="private">
+          <ownedParameter xmi:id="_bszx-Zr2Ed2wxcOs-TQPsQ" name="u" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszx-pr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixJr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bszx-5r2Ed2wxcOs-TQPsQ" name="f" visibility="private">
+          <ownedParameter xmi:id="_bszx_Jr2Ed2wxcOs-TQPsQ" name="u" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszx_Zr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixJr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bszx_pr2Ed2wxcOs-TQPsQ" name="main" visibility="public" isStatic="true">
+          <ownedParameter xmi:id="_bszx_5r2Ed2wxcOs-TQPsQ" name="args" type="_bs0_OZr2Ed2wxcOs-TQPsQ"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bszyAJr2Ed2wxcOs-TQPsQ" name="stampa" visibility="private" isStatic="true">
+          <ownedParameter xmi:id="_bszyAZr2Ed2wxcOs-TQPsQ" name="msg" type="_bsyiwZr2Ed2wxcOs-TQPsQ"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bszyApr2Ed2wxcOs-TQPsQ" name="stampa" visibility="private" isStatic="true">
+          <ownedParameter xmi:id="_bszyA5r2Ed2wxcOs-TQPsQ" name="mat" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_bszyBJr2Ed2wxcOs-TQPsQ" name="util">
+        <packagedElement xmi:type="uml:Class" xmi:id="_bszyBZr2Ed2wxcOs-TQPsQ" name="StatUtil">
+          <ownedAttribute xmi:id="_bszyBpr2Ed2wxcOs-TQPsQ" name="P_LOW" visibility="private" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszyB5r2Ed2wxcOs-TQPsQ" name="P_HIGH" visibility="private" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszyCJr2Ed2wxcOs-TQPsQ" name="ICDF_A" visibility="private" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszyCZr2Ed2wxcOs-TQPsQ" name="ICDF_B" visibility="private" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszyCpr2Ed2wxcOs-TQPsQ" name="ICDF_C" visibility="private" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszyC5r2Ed2wxcOs-TQPsQ" name="ICDF_D" visibility="private" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszyDJr2Ed2wxcOs-TQPsQ" name="ERF_A" visibility="private" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszyDZr2Ed2wxcOs-TQPsQ" name="ERF_B" visibility="private" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszyDpr2Ed2wxcOs-TQPsQ" name="ERF_C" visibility="private" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszyD5r2Ed2wxcOs-TQPsQ" name="ERF_D" visibility="private" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszyEJr2Ed2wxcOs-TQPsQ" name="ERF_P" visibility="private" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszyEZr2Ed2wxcOs-TQPsQ" name="ERF_Q" visibility="private" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszyEpr2Ed2wxcOs-TQPsQ" name="PI_SQRT" visibility="private" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszyE5r2Ed2wxcOs-TQPsQ" name="THRESHOLD" visibility="private" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszyFJr2Ed2wxcOs-TQPsQ" name="X_MIN" visibility="private" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszyFZr2Ed2wxcOs-TQPsQ" name="X_INF" visibility="private" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszyFpr2Ed2wxcOs-TQPsQ" name="X_NEG" visibility="private" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszyF5r2Ed2wxcOs-TQPsQ" name="X_SMALL" visibility="private" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszyGJr2Ed2wxcOs-TQPsQ" name="X_BIG" visibility="private" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszyGZr2Ed2wxcOs-TQPsQ" name="X_HUGE" visibility="private" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+          <ownedAttribute xmi:id="_bszyGpr2Ed2wxcOs-TQPsQ" name="X_MAX" visibility="private" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+          <ownedOperation xmi:id="_bszyG5r2Ed2wxcOs-TQPsQ" name="getInvCDF" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_bszyHJr2Ed2wxcOs-TQPsQ" name="d" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszyHZr2Ed2wxcOs-TQPsQ" name="highPrecision" type="_bsyiwZr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszyHpr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixJr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszyH5r2Ed2wxcOs-TQPsQ" name="calerf" visibility="private" isStatic="true">
+            <ownedParameter xmi:id="_bszyIJr2Ed2wxcOs-TQPsQ" name="X" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszyIZr2Ed2wxcOs-TQPsQ" name="jint" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszyIpr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixJr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszyI5r2Ed2wxcOs-TQPsQ" name="erf" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_bszyJJr2Ed2wxcOs-TQPsQ" name="d" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszyJZr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixJr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszyJpr2Ed2wxcOs-TQPsQ" name="erfc" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_bszyJ5r2Ed2wxcOs-TQPsQ" name="d" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszyKJr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixJr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszyKZr2Ed2wxcOs-TQPsQ" name="erfcx" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_bszyKpr2Ed2wxcOs-TQPsQ" name="d" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszyK5r2Ed2wxcOs-TQPsQ" name="return" type="_bsyixJr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_bszyLJr2Ed2wxcOs-TQPsQ" name="refine" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_bszyLZr2Ed2wxcOs-TQPsQ" name="x" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszyLpr2Ed2wxcOs-TQPsQ" name="d" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+            <ownedParameter xmi:id="_bszyL5r2Ed2wxcOs-TQPsQ" name="return" type="_bsyixJr2Ed2wxcOs-TQPsQ" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_bszyMJr2Ed2wxcOs-TQPsQ" name="Random"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_bszyMZr2Ed2wxcOs-TQPsQ" name="noise">
+      <packagedElement xmi:type="uml:Class" xmi:id="_bszyMpr2Ed2wxcOs-TQPsQ" name="GaussianNoiseGenerator">
+        <ownedAttribute xmi:id="_bszyM5r2Ed2wxcOs-TQPsQ" name="rndGenerator" visibility="private" type="_bszyMJr2Ed2wxcOs-TQPsQ"/>
+        <ownedOperation xmi:id="_bszyNJr2Ed2wxcOs-TQPsQ" name="addGaussianNoise" visibility="public">
+          <ownedParameter xmi:id="_bszyNZr2Ed2wxcOs-TQPsQ" name="immagine" type="_bszKYpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszyNpr2Ed2wxcOs-TQPsQ" name="grayScale" type="_bsyiwZr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszyN5r2Ed2wxcOs-TQPsQ" name="deviazione" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszyOJr2Ed2wxcOs-TQPsQ" name="media" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszyOZr2Ed2wxcOs-TQPsQ" name="return" type="_bszKYpr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bszyOpr2Ed2wxcOs-TQPsQ" name="addGaussianNoiseToGrayScale" visibility="public">
+          <ownedParameter xmi:id="_bszyO5r2Ed2wxcOs-TQPsQ" name="immagine" type="_bszKYpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszyPJr2Ed2wxcOs-TQPsQ" name="deviazione" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszyPZr2Ed2wxcOs-TQPsQ" name="media" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bszyPpr2Ed2wxcOs-TQPsQ" name="return" type="_bszKYpr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bszyP5r2Ed2wxcOs-TQPsQ" name="addGaussianNoiseInterleaved" visibility="public">
+          <ownedParameter xmi:id="_bszyQJr2Ed2wxcOs-TQPsQ" name="immagine" type="_bszKYpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0X8Jr2Ed2wxcOs-TQPsQ" name="deviazione" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0X8Zr2Ed2wxcOs-TQPsQ" name="media" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0X8pr2Ed2wxcOs-TQPsQ" name="return" type="_bszKYpr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bs0X85r2Ed2wxcOs-TQPsQ" name="generaRumoreGaussiano" visibility="public">
+          <ownedParameter xmi:id="_bs0X9Jr2Ed2wxcOs-TQPsQ" name="w" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0X9Zr2Ed2wxcOs-TQPsQ" name="h" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0X9pr2Ed2wxcOs-TQPsQ" name="deviazione" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0X95r2Ed2wxcOs-TQPsQ" name="media" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0X-Jr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixJr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bs0X-Zr2Ed2wxcOs-TQPsQ" name="stampa" visibility="private" isStatic="true">
+          <ownedParameter xmi:id="_bs0X-pr2Ed2wxcOs-TQPsQ" name="mat" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_bs0X-5r2Ed2wxcOs-TQPsQ" name="NoiseEstimator">
+        <ownedOperation xmi:id="_bs0X_Jr2Ed2wxcOs-TQPsQ" name="estimateNoise" visibility="public" isStatic="true">
+          <ownedParameter xmi:id="_bs0X_Zr2Ed2wxcOs-TQPsQ" name="immagine" type="_bszKYpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0X_pr2Ed2wxcOs-TQPsQ" name="raggio" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0X_5r2Ed2wxcOs-TQPsQ" name="interleaverSeed" type="_bsyix5r2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0YAJr2Ed2wxcOs-TQPsQ" name="lunghezzaMsg" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0YAZr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixJr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bs0YApr2Ed2wxcOs-TQPsQ" name="estimateNoise" visibility="public" isStatic="true">
+          <ownedParameter xmi:id="_bs0YA5r2Ed2wxcOs-TQPsQ" name="immagine" type="_bszKYpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0YBJr2Ed2wxcOs-TQPsQ" name="immOriginale" type="_bszKYpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0YBZr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixJr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bs0YBpr2Ed2wxcOs-TQPsQ" name="stampa" visibility="private" isStatic="true">
+          <ownedParameter xmi:id="_bs0YB5r2Ed2wxcOs-TQPsQ" name="mat" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_bs0YCJr2Ed2wxcOs-TQPsQ" name="AlphaTrimmedFilter">
+        <ownedAttribute xmi:id="_bs0YCZr2Ed2wxcOs-TQPsQ" name="raggio" visibility="private" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedAttribute xmi:id="_bs0YCpr2Ed2wxcOs-TQPsQ" name="interleaverSeed" visibility="private" type="_bsyix5r2Ed2wxcOs-TQPsQ"/>
+        <ownedAttribute xmi:id="_bs0YC5r2Ed2wxcOs-TQPsQ" name="numOfEmbeddedBit" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedOperation xmi:id="_bs0YDJr2Ed2wxcOs-TQPsQ" name="createCompatibleDestImage" visibility="public">
+          <ownedParameter xmi:id="_bs0YDZr2Ed2wxcOs-TQPsQ" name="src" type="_bszKYpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0YDpr2Ed2wxcOs-TQPsQ" name="destModel" type="_bs0YIZr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0YD5r2Ed2wxcOs-TQPsQ" name="return" type="_bszKYpr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bs0YEJr2Ed2wxcOs-TQPsQ" name="filter" visibility="public">
+          <ownedParameter xmi:id="_bs0YEZr2Ed2wxcOs-TQPsQ" name="src" type="_bszKYpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0YEpr2Ed2wxcOs-TQPsQ" name="dest" type="_bszKYpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0YE5r2Ed2wxcOs-TQPsQ" name="return" type="_bszKYpr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bs0YFJr2Ed2wxcOs-TQPsQ" name="filterAll" visibility="public">
+          <ownedParameter xmi:id="_bs0YFZr2Ed2wxcOs-TQPsQ" name="src" type="_bszKYpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0YFpr2Ed2wxcOs-TQPsQ" name="dest" type="_bszKYpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0YF5r2Ed2wxcOs-TQPsQ" name="return" type="_bszKYpr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bs0YGJr2Ed2wxcOs-TQPsQ" name="getBounds2D" visibility="public">
+          <ownedParameter xmi:id="_bs0YGZr2Ed2wxcOs-TQPsQ" name="src" type="_bszKYpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0YGpr2Ed2wxcOs-TQPsQ" name="return" type="_bs0YIpr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bs0YG5r2Ed2wxcOs-TQPsQ" name="getPoint2D" visibility="public">
+          <ownedParameter xmi:id="_bs0YHJr2Ed2wxcOs-TQPsQ" name="srcPoint" type="_bs0YI5r2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0YHZr2Ed2wxcOs-TQPsQ" name="destPoint" type="_bs0YI5r2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0YHpr2Ed2wxcOs-TQPsQ" name="return" type="_bs0YI5r2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bs0YH5r2Ed2wxcOs-TQPsQ" name="getRenderingHints" visibility="public">
+          <ownedParameter xmi:id="_bs0YIJr2Ed2wxcOs-TQPsQ" name="return" type="_bs0YJJr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_bs0YIZr2Ed2wxcOs-TQPsQ" name="ColorModel"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_bs0YIpr2Ed2wxcOs-TQPsQ" name="Rectangle2D"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_bs0YI5r2Ed2wxcOs-TQPsQ" name="Point2D"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_bs0YJJr2Ed2wxcOs-TQPsQ" name="RenderingHints"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_bs0YJZr2Ed2wxcOs-TQPsQ" name="protocollo">
+      <packagedElement xmi:type="uml:Class" xmi:id="_bs0YJpr2Ed2wxcOs-TQPsQ" name="ProtocolGenerator">
+        <ownedAttribute xmi:id="_bs0YJ5r2Ed2wxcOs-TQPsQ" name="START" visibility="private" type="_bsyiw5r2Ed2wxcOs-TQPsQ"/>
+        <ownedOperation xmi:id="_bs0YKJr2Ed2wxcOs-TQPsQ" name="main" visibility="public" isStatic="true">
+          <ownedParameter xmi:id="_bs0YKZr2Ed2wxcOs-TQPsQ" name="args" type="_bs0_OZr2Ed2wxcOs-TQPsQ"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bs0YKpr2Ed2wxcOs-TQPsQ" name="addHeader" visibility="public" isStatic="true">
+          <ownedParameter xmi:id="_bs0YK5r2Ed2wxcOs-TQPsQ" name="messaggio" type="_bs0_OZr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0YLJr2Ed2wxcOs-TQPsQ" name="encodedMsgLength" type="_bsyix5r2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0YLZr2Ed2wxcOs-TQPsQ" name="return" type="_bs0_OZr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bs0YLpr2Ed2wxcOs-TQPsQ" name="checkHeader" visibility="public" isStatic="true">
+          <ownedParameter xmi:id="_bs0YL5r2Ed2wxcOs-TQPsQ" name="header" type="_bs0_OZr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0YMJr2Ed2wxcOs-TQPsQ" name="capienzaImmagine" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0YMZr2Ed2wxcOs-TQPsQ" name="return" type="_bsyiwZr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bs0YMpr2Ed2wxcOs-TQPsQ" name="getEmbeddedLength" visibility="public" isStatic="true">
+          <ownedParameter xmi:id="_bs0YM5r2Ed2wxcOs-TQPsQ" name="header" type="_bs0_OZr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0YNJr2Ed2wxcOs-TQPsQ" name="return" type="_bsyix5r2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bs0YNZr2Ed2wxcOs-TQPsQ" name="getHeaderBitLength" visibility="public" isStatic="true">
+          <ownedParameter xmi:id="_bs0YNpr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixpr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bs0YN5r2Ed2wxcOs-TQPsQ" name="getHeaderCharLength" visibility="public" isStatic="true">
+          <ownedParameter xmi:id="_bs0YOJr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixpr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_bs0YOZr2Ed2wxcOs-TQPsQ" name="util">
+      <packagedElement xmi:type="uml:Class" xmi:id="_bs0YOpr2Ed2wxcOs-TQPsQ" name="ImageTransformer">
+        <ownedOperation xmi:id="_bs0YO5r2Ed2wxcOs-TQPsQ" name="img2matrix" visibility="public" isStatic="true">
+          <ownedParameter xmi:id="_bs0YPJr2Ed2wxcOs-TQPsQ" name="immagine" type="_bszKYpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0YPZr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixJr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_bs0YPpr2Ed2wxcOs-TQPsQ" name="Digest">
+        <ownedOperation xmi:id="_bs0YP5r2Ed2wxcOs-TQPsQ" name="generaLong" visibility="public" isStatic="true">
+          <ownedParameter xmi:id="_bs0YQJr2Ed2wxcOs-TQPsQ" name="psw" type="_bs0_OZr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0YQZr2Ed2wxcOs-TQPsQ" name="return" type="_bsyix5r2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_bs0YQpr2Ed2wxcOs-TQPsQ" name="ExclusiveRandom2D">
+        <generalization xmi:id="_bs0YQ5r2Ed2wxcOs-TQPsQ" general="_bszyMJr2Ed2wxcOs-TQPsQ"/>
+        <ownedAttribute xmi:id="_bs0YRJr2Ed2wxcOs-TQPsQ" name="tabella" type="_bs0YSpr2Ed2wxcOs-TQPsQ" association="_bs0YhZr2Ed2wxcOs-TQPsQ"/>
+        <ownedAttribute xmi:id="_bs0YRZr2Ed2wxcOs-TQPsQ" name="bordo" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedOperation xmi:id="_bs0YRpr2Ed2wxcOs-TQPsQ" name="nextPoint" visibility="public">
+          <ownedParameter xmi:id="_bs0YR5r2Ed2wxcOs-TQPsQ" name="return" type="_bs0YhJr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bs0YSJr2Ed2wxcOs-TQPsQ" name="main" visibility="public" isStatic="true">
+          <ownedParameter xmi:id="_bs0YSZr2Ed2wxcOs-TQPsQ" name="args" type="_bs0_OZr2Ed2wxcOs-TQPsQ"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_bs0YSpr2Ed2wxcOs-TQPsQ" name="BitMap">
+        <ownedAttribute xmi:id="_bs0YS5r2Ed2wxcOs-TQPsQ" name="tabella" type="_bsyiwZr2Ed2wxcOs-TQPsQ"/>
+        <ownedAttribute xmi:id="_bs0YTJr2Ed2wxcOs-TQPsQ" name="contatore" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedOperation xmi:id="_bs0YTZr2Ed2wxcOs-TQPsQ" name="add" visibility="public">
+          <ownedParameter xmi:id="_bs0YTpr2Ed2wxcOs-TQPsQ" name="x" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0YT5r2Ed2wxcOs-TQPsQ" name="y" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bs0YUJr2Ed2wxcOs-TQPsQ" name="contains" visibility="public">
+          <ownedParameter xmi:id="_bs0YUZr2Ed2wxcOs-TQPsQ" name="x" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0YUpr2Ed2wxcOs-TQPsQ" name="y" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0YU5r2Ed2wxcOs-TQPsQ" name="return" type="_bsyiwZr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bs0YVJr2Ed2wxcOs-TQPsQ" name="getWidth" visibility="public">
+          <ownedParameter xmi:id="_bs0YVZr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixpr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bs0YVpr2Ed2wxcOs-TQPsQ" name="getHeight" visibility="public">
+          <ownedParameter xmi:id="_bs0YV5r2Ed2wxcOs-TQPsQ" name="return" type="_bsyixpr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_bs0YWJr2Ed2wxcOs-TQPsQ" name="BooleanArray">
+        <ownedOperation xmi:id="_bs0YWZr2Ed2wxcOs-TQPsQ" name="boolean2str" visibility="public" isStatic="true">
+          <ownedParameter xmi:id="_bs0YWpr2Ed2wxcOs-TQPsQ" name="msg" type="_bsyiwZr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0YW5r2Ed2wxcOs-TQPsQ" name="return" type="_bs0_OZr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bs0YXJr2Ed2wxcOs-TQPsQ" name="estraiBit" visibility="public" isStatic="true">
+          <ownedParameter xmi:id="_bs0YXZr2Ed2wxcOs-TQPsQ" name="bits" type="_bsyiw5r2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0YXpr2Ed2wxcOs-TQPsQ" name="posizione" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0YX5r2Ed2wxcOs-TQPsQ" name="return" type="_bsyiwZr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bs0YYJr2Ed2wxcOs-TQPsQ" name="estraiBit" visibility="public" isStatic="true">
+          <ownedParameter xmi:id="_bs0YYZr2Ed2wxcOs-TQPsQ" name="bits" type="_bsyix5r2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0YYpr2Ed2wxcOs-TQPsQ" name="posizione" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0YY5r2Ed2wxcOs-TQPsQ" name="return" type="_bsyiwZr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bs0YZJr2Ed2wxcOs-TQPsQ" name="estraiBit" visibility="public" isStatic="true">
+          <ownedParameter xmi:id="_bs0YZZr2Ed2wxcOs-TQPsQ" name="bits" type="_bsyiyJr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0YZpr2Ed2wxcOs-TQPsQ" name="posizione" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0YZ5r2Ed2wxcOs-TQPsQ" name="return" type="_bsyiwZr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bs0YaJr2Ed2wxcOs-TQPsQ" name="inserisciBit" visibility="public" isStatic="true">
+          <ownedParameter xmi:id="_bs0YaZr2Ed2wxcOs-TQPsQ" name="sample" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0Yapr2Ed2wxcOs-TQPsQ" name="bit" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0Ya5r2Ed2wxcOs-TQPsQ" name="posizione" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0YbJr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixpr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bs0YbZr2Ed2wxcOs-TQPsQ" name="inserisciBit" visibility="public" isStatic="true">
+          <ownedParameter xmi:id="_bs0Ybpr2Ed2wxcOs-TQPsQ" name="sample" type="_bsyix5r2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0Yb5r2Ed2wxcOs-TQPsQ" name="bit" type="_bsyix5r2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0YcJr2Ed2wxcOs-TQPsQ" name="posizione" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0YcZr2Ed2wxcOs-TQPsQ" name="return" type="_bsyix5r2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bs0Ycpr2Ed2wxcOs-TQPsQ" name="long2boolean" visibility="public" isStatic="true">
+          <ownedParameter xmi:id="_bs0Yc5r2Ed2wxcOs-TQPsQ" name="n" type="_bsyix5r2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0YdJr2Ed2wxcOs-TQPsQ" name="return" type="_bsyiwZr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bs0YdZr2Ed2wxcOs-TQPsQ" name="str2long" visibility="public" isStatic="true">
+          <ownedParameter xmi:id="_bs0Ydpr2Ed2wxcOs-TQPsQ" name="str" type="_bs0_OZr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0Yd5r2Ed2wxcOs-TQPsQ" name="return" type="_bsyix5r2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bs0YeJr2Ed2wxcOs-TQPsQ" name="main" visibility="public" isStatic="true">
+          <ownedParameter xmi:id="_bs0YeZr2Ed2wxcOs-TQPsQ" name="args" type="_bs0_OZr2Ed2wxcOs-TQPsQ"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bs0Yepr2Ed2wxcOs-TQPsQ" name="pad" visibility="private" isStatic="true">
+          <ownedParameter xmi:id="_bs0Ye5r2Ed2wxcOs-TQPsQ" name="bitMsg" type="_bsyiwZr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0YfJr2Ed2wxcOs-TQPsQ" name="multiplo" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0YfZr2Ed2wxcOs-TQPsQ" name="return" type="_bsyiwZr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bs0Yfpr2Ed2wxcOs-TQPsQ" name="short2boolean" visibility="public" isStatic="true">
+          <ownedParameter xmi:id="_bs0Yf5r2Ed2wxcOs-TQPsQ" name="data" type="_bsyiyJr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0YgJr2Ed2wxcOs-TQPsQ" name="return" type="_bsyiwZr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_bs0YgZr2Ed2wxcOs-TQPsQ" name="str2boolean" visibility="public" isStatic="true">
+          <ownedParameter xmi:id="_bs0Ygpr2Ed2wxcOs-TQPsQ" name="msg" type="_bs0_OZr2Ed2wxcOs-TQPsQ"/>
+          <ownedParameter xmi:id="_bs0Yg5r2Ed2wxcOs-TQPsQ" name="return" type="_bsyiwZr2Ed2wxcOs-TQPsQ" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_bs0YhJr2Ed2wxcOs-TQPsQ" name="Point"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_bs0YhZr2Ed2wxcOs-TQPsQ" memberEnd="_bs0YRJr2Ed2wxcOs-TQPsQ _bs0Yhpr2Ed2wxcOs-TQPsQ">
+        <ownedEnd xmi:id="_bs0Yhpr2Ed2wxcOs-TQPsQ" name="target" type="_bs0YQpr2Ed2wxcOs-TQPsQ" association="_bs0YhZr2Ed2wxcOs-TQPsQ"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_bs0_AJr2Ed2wxcOs-TQPsQ" name="test">
+    <packagedElement xmi:type="uml:Class" xmi:id="_bs0_AZr2Ed2wxcOs-TQPsQ" name="PrintUtil">
+      <ownedOperation xmi:id="_bs0_Apr2Ed2wxcOs-TQPsQ" name="stampa" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_bs0_A5r2Ed2wxcOs-TQPsQ" name="msg" type="_bsyiwZr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bs0_BJr2Ed2wxcOs-TQPsQ" name="n" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bs0_BZr2Ed2wxcOs-TQPsQ" name="stampa" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_bs0_Bpr2Ed2wxcOs-TQPsQ" name="msg" type="_bsyiwZr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bs0_B5r2Ed2wxcOs-TQPsQ" name="n" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bs0_CJr2Ed2wxcOs-TQPsQ" name="m" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bs0_CZr2Ed2wxcOs-TQPsQ" name="stampa" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_bs0_Cpr2Ed2wxcOs-TQPsQ" name="msg" type="_bsyiwZr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bs0_C5r2Ed2wxcOs-TQPsQ" name="n" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bs0_DJr2Ed2wxcOs-TQPsQ" name="sep" type="_bsyiw5r2Ed2wxcOs-TQPsQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bs0_DZr2Ed2wxcOs-TQPsQ" name="stampa" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_bs0_Dpr2Ed2wxcOs-TQPsQ" name="mat" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bs0_D5r2Ed2wxcOs-TQPsQ" name="stampa" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_bs0_EJr2Ed2wxcOs-TQPsQ" name="mat" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_bs0_EZr2Ed2wxcOs-TQPsQ" name="prova">
+      <ownedOperation xmi:id="_bs0_Epr2Ed2wxcOs-TQPsQ" name="settaBanda" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_bs0_E5r2Ed2wxcOs-TQPsQ" name="image" type="_bszKYpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bs0_FJr2Ed2wxcOs-TQPsQ" name="banda" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bs0_FZr2Ed2wxcOs-TQPsQ" name="valore" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bs0_Fpr2Ed2wxcOs-TQPsQ" name="return" type="_bszKYpr2Ed2wxcOs-TQPsQ" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_bs0_F5r2Ed2wxcOs-TQPsQ" name="Generatore">
+      <ownedOperation xmi:id="_bs0_GJr2Ed2wxcOs-TQPsQ" name="generaLettere" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_bs0_GZr2Ed2wxcOs-TQPsQ" name="lung" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bs0_Gpr2Ed2wxcOs-TQPsQ" name="return" type="_bs0_OZr2Ed2wxcOs-TQPsQ" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_bs0_G5r2Ed2wxcOs-TQPsQ" name="util">
+    <packagedElement xmi:type="uml:Class" xmi:id="_bs0_HJr2Ed2wxcOs-TQPsQ" name="ColorTransform">
+      <ownedOperation xmi:id="_bs0_HZr2Ed2wxcOs-TQPsQ" name="toRGB" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_bs0_Hpr2Ed2wxcOs-TQPsQ" name="immagine" type="_bszKYpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bs0_H5r2Ed2wxcOs-TQPsQ" name="return" type="_bszKYpr2Ed2wxcOs-TQPsQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bs0_IJr2Ed2wxcOs-TQPsQ" name="toGray" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_bs0_IZr2Ed2wxcOs-TQPsQ" name="immagine" type="_bszKYpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bs0_Ipr2Ed2wxcOs-TQPsQ" name="return" type="_bszKYpr2Ed2wxcOs-TQPsQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bs0_I5r2Ed2wxcOs-TQPsQ" name="toColorSpace" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_bs0_JJr2Ed2wxcOs-TQPsQ" name="immagine" type="_bszKYpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bs0_JZr2Ed2wxcOs-TQPsQ" name="colorSpaceType" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bs0_Jpr2Ed2wxcOs-TQPsQ" name="return" type="_bszKYpr2Ed2wxcOs-TQPsQ" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_bs0_J5r2Ed2wxcOs-TQPsQ" name="Dimensioni">
+      <ownedOperation xmi:id="_bs0_KJr2Ed2wxcOs-TQPsQ" name="capienzaImmagineChar" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_bs0_KZr2Ed2wxcOs-TQPsQ" name="immagine" type="_bszKYpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bs0_Kpr2Ed2wxcOs-TQPsQ" name="return" type="_bsyix5r2Ed2wxcOs-TQPsQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bs0_K5r2Ed2wxcOs-TQPsQ" name="capienzaImmagineBit" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_bs0_LJr2Ed2wxcOs-TQPsQ" name="immagine" type="_bszKYpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bs0_LZr2Ed2wxcOs-TQPsQ" name="return" type="_bsyix5r2Ed2wxcOs-TQPsQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bs0_Lpr2Ed2wxcOs-TQPsQ" name="rendiLeggibile" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_bs0_L5r2Ed2wxcOs-TQPsQ" name="cap" type="_bsyix5r2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bs0_MJr2Ed2wxcOs-TQPsQ" name="return" type="_bs0_OZr2Ed2wxcOs-TQPsQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bs0_MZr2Ed2wxcOs-TQPsQ" name="rendiLeggibile" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_bs0_Mpr2Ed2wxcOs-TQPsQ" name="cap" type="_bsyix5r2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bs0_M5r2Ed2wxcOs-TQPsQ" name="div" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bs0_NJr2Ed2wxcOs-TQPsQ" name="return" type="_bs0_OZr2Ed2wxcOs-TQPsQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_bs0_NZr2Ed2wxcOs-TQPsQ" name="tronca" visibility="private" isStatic="true">
+        <ownedParameter xmi:id="_bs0_Npr2Ed2wxcOs-TQPsQ" name="i" type="_bsyixJr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bs0_N5r2Ed2wxcOs-TQPsQ" name="n" type="_bsyixpr2Ed2wxcOs-TQPsQ"/>
+        <ownedParameter xmi:id="_bs0_OJr2Ed2wxcOs-TQPsQ" name="return" type="_bsyixJr2Ed2wxcOs-TQPsQ" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_bs0_OZr2Ed2wxcOs-TQPsQ" name="String"/>
+</uml:Model>

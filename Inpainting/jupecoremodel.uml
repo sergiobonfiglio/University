@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_3505322" name="model">
+  <packagedElement xmi:type="uml:Package" xmi:id="JupePrimititvesTypesPackage_3778616" name="JupePrimititvesTypesPackage">
+    <packageMerge xmi:id="unnamed_element_2210322">
+      <mergedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+    </packageMerge>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="JupePrimititvesTypesPackage.boolean_2447621" name="boolean"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="JupePrimititvesTypesPackage.byte_10854633" name="byte"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="JupePrimititvesTypesPackage.char_15161397" name="char"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="JupePrimititvesTypesPackage.double_5252080" name="double"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="JupePrimititvesTypesPackage.float_6791769" name="float"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="JupePrimititvesTypesPackage.int_13869460" name="int"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="JupePrimititvesTypesPackage.long_1381001" name="long"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="JupePrimititvesTypesPackage.short_7610108" name="short"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="JupeUnresolvedTypesPackage_8306436" name="JupeUnresolvedTypesPackage"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="filters_15400314" name="filters">
+    <packagedElement xmi:type="uml:Class" xmi:id="filters.BMPFilter_12998880" name="BMPFilter">
+      <ownedOperation xmi:id="filters.BMPFilter.accept_4249520" name="accept" visibility="public">
+        <ownedParameter xmi:id="_jEZVYJrpEd2HXp75kMbQEA" name="" type="JupePrimititvesTypesPackage.boolean_2447621" direction="return"/>
+        <ownedParameter xmi:id="filters.BMPFilter.accept.f_5868634" name="f"/>
+      </ownedOperation>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="java_16754539" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="java.io_16639587" name="io">
+      <packagedElement xmi:type="uml:Class" xmi:id="java.io.File_14594129" name="File"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="hashForwardList_11485104" name="hashForwardList">
+    <packagedElement xmi:type="uml:Class" xmi:id="hashForwardList.HashForwardList_4602804" name="HashForwardList"/>
+  </packagedElement>
+</uml:Model>
